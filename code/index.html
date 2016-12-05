@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+
+<html>
+	<!-- begin head -->
+	<head>
+		<meta charset="utf-8" />
+		<title>Kevin Jacks - Portfolio</title>
+
+		<!--stylesheets-->
+		<link rel="stylesheet" href="index.css">
+		<!--javascript-->
+		<link rel="javascript" href="js/scripts/js">
+		<!--links-->
+		<link href='//fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+  		<link href='//fonts.googleapis.com/css?family=Sanchez:400italic,400' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+		<!--Flickity CDN-->
+		<!--<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">-->
+		<!--<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>-->
+		<!--Flickity local resources-->
+		<link rel="stylesheet" href="stylesheets/flickity.min.css">
+		<script src="js/flickity.pkgd.min.js"></script>
+		<!--favicon-->
+		<link rel="icon" href="images/favicon.ico">
+	</head>
+
+	<!-- begin body -->
+	<body>
+		<!-- begin header -->
+		<header class="navigation" role="banner">
+			<div class="navigation-wrapper">
+				<!--<a href="javascript:void(0)" class="logo">
+				<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="Logo Image">
+				</a>-->
+				<a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+				<nav role="navigation">
+					<ul id="js-navigation-menu" class="navigation-menu show">
+						<li class="nav-link"><a href="#about-anchor">About</a></li>
+						<li class="nav-link"><a href="#projects-anchor">Projects</a></li>
+						<li class="nav-link"><a href="#skills-anchor">Skills</a></li>
+						<li class="nav-link"><a href="#contact-anchor">Contact</a></li>
+					</ul>
+				</nav>
+				<!--<div class="navigation-tools">
+					<div class="search-bar">
+						<form role="search">
+						<input type="search" placeholder="Enter Search" />
+						<button type="submit">
+							<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="Search Icon">
+						</button>
+						</form>
+					</div>
+				</div>-->
+			</div>
+		</header>
+
+		<!--begin top image-->
+
+		<!--begin about-->
+		<div class="secondary-bg">
+			<a name="about-anchor"></a>
+			<article class="type-system-geometric" id="about">
+				<h1>Kevin Jacks - Software Developer</h1>
+				<div class="row">
+					<div class="about-column">
+						<p>I'm Kevin Jacks. I used to be an engineer but switched careers to follow my passion of software development. I'm currently finishing up my schooling at MATC with dual associate degrees: Web and Software Developer & Mobile Applications Developer. I currently work as a Software Developer on a web application providing ISP solution software.</p>
+					</div>
+					<div class="about-column">
+						<p>I grew up on a dairy farm in rural central Wisconsin. I received a Bachelor's Degree from UW-Stout in Engineering Technology and worked as an Energy Engineer for four years before switching to software development. I currently live in the Milwaukee area with my wife Tracey and 2 year old son Jameson.</p>
+					</div>
+				</div>
+			</article>	
+		</div>
+	
+		<!--<hr>-->
+
+		<!--<div class="line-behind-text">
+			<h6 class="er_toc_tag" id="er-toc-id-2">Cards</h6>
+		</div>-->
+
+		<!--begin projects-->
+
+		<a name="projects-anchor"></a>
+		<div class="base-bg">
+			<article class="type-system-geometric" id="carousel">
+				<h1>Portfolio</h1>
+				<div class="carousel" data-flickity='{ 
+						"wrapAround": true, 
+						"imagesLoaded": true, 
+						"percentPosition": false,
+						"autoPlay": 2000 
+					}'>
+					<!--<img src="images/website2.png" alt="">-->
+					<div class="hover-tile-outer">
+						<div class="hover-tile-container">
+							<div class="hover-tile hover-tile-visible"><img src="images/website2.png" alt=""></div>
+							<div class="hover-tile hover-tile-hidden">
+								<h4>Hidden Copy</h4>
+								<p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
+							</div>
+						</div>
+					</div>					
+					<img src="images/mobile2.png" alt="">
+					<img src="images/checklist2.png" alt="">
+					<img src="images/shopping2.png" alt="">
+					<img src="images/webcode2.png" alt="">
+					<img src="images/rocket2.png" alt="">
+				</div>
+			</article>
+			<br>
+		</div>
+
+		
+		<!--<section id="projects">
+			<div class="cards" id="projects">
+				<div class="card">
+					<div class="card-image">
+					<img src="images/website2.png" alt="">
+					</div>
+					<div class="card-header">
+						Online Deer Registration Website
+					</div>
+					<div class="card-copy">
+					<p>The Online Deer Registration website is a mock-up site that allows deer hunters to register their deer online. The website contains an AngularJS form that collects the user's input and uploads them to an online database. The form uses validation to ensure all fields are properly filled out before submitting.</p>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-image">
+					<img src="images/mobile2.png" alt="">
+					</div>
+					<div class="card-header">
+						Deer Hunting License Android App
+					</div>
+					<div class="card-copy">
+					<p>The Deer Hunting License App for Android is a mock-up application that allows users to purchase a deer hunting license. Users are introduced by a splash screen, then presented with a grid-view menu.</p>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-image">
+					<img src="images/checklist2.png" alt="">
+					</div>
+					<div class="card-header">
+						Online To-Do List
+					</div>
+					<div class="card-copy">
+					<p>The Online To-Do List is an application that allows users to create, read, update, and delete data on an online database in real-time. The application is fast, responsive, and looks great.</p>
+					</div>
+				</div>
+			</div>
+			<div class="cards">
+				<div class="card">
+					<div class="card-image">
+					<img src="images/shopping2.png" alt="">
+					</div>
+					<div class="card-header">
+						Grocery List Application
+					</div>
+					<div class="card-copy">
+					<p>The Grocery List is a desktop application that allows users to create, read, update, and delete data on a database. Users can keep track of the groceries that they need to buy, as well as key information such as size and quantity.</p>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-image">
+					<img src="images/webcode2.png" alt="">
+					</div>
+					<div class="card-header">
+						Gaming Group Website
+					</div>
+					<div class="card-copy">
+					<p>The Gaming Group Website is a mock-up site that was created to act as a central hub for a group of gaming friends. The website provides information on the group and its members, provides screenshots and videos of the games they play, and scheduling information.</p>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-image">
+					<img src="images/rocket2.png" alt="">
+					</div>
+					<div class="card-header">
+						Space-Themed Trivia Game
+					</div>
+					<div class="card-copy">
+					<p>The Space-Themed Trivia Game is just what it sounds like - a trivia game that you can play to test your knowledge of space and the solar system! Test your wits and see how you score against your friends.</p>
+					</div>
+				</div>
+			</div>
+		</section>-->
+
+		<!--<hr>-->
+		
+
+		<!--begin skills-->
+		<a name="skills-anchor"></a>
+		<div class="secondary-bg">
+			<article class="type-system-geometric" id="skills">
+				<h1>Skills</h1>
+				<div class="row">
+					<div class="skills-column">
+						<p><img src="images/checkmarkLightGreen.png" alt="checkbox" class="checkbox">&nbsp;PHP</p>
+						<p><img src="images/checkmarkLightGreen.png" alt="checkbox" class="checkbox">&nbsp;SQL</p>
+						<p><img src="images/checkmarkLightGreen.png" alt="checkbox" class="checkbox">&nbsp;Linux</p>
+						<p><img src="images/checkmarkLightGreen.png" alt="checkbox" class="checkbox">&nbsp;Back End</p>
+					</div>
+					<div class="skills-column">
+						<p><img src="images/checkmarkLightGreen.png" alt="checkbox" class="checkbox">&nbsp;JavaScript</p>
+						<p><img src="images/checkmarkLightGreen.png" alt="checkbox" class="checkbox">&nbsp;C#</p>
+						<p><img src="images/checkmarkLightGreen.png" alt="checkbox" class="checkbox">&nbsp;Java</p>
+						<p><img src="images/checkmarkLightGreen.png" alt="checkbox" class="checkbox">&nbsp;Front End</p>
+					</div>
+				</div>
+			</article>
+		</div>	
+
+		<!--<hr>	-->
+
+		<!--begin contact-->
+		<a name="contact-anchor"></a>
+		<div class="base-bg">
+			<article class="type-system-geometric" id="contact">
+				<div class="row">
+					<h1>Contact Me</h1>
+				</div>
+				<div class="row-contact">
+					<form action="#" method="post" name="contact_form" id="contact_form" enctype="text/plain">
+						<label for="first_name">First Name:</label><div style="clear:both"></div>
+						<input type="text" name="first_name" id="first_name" required><br>
+						<label for="last_name">Last Name:</label><div style="clear:both"></div>
+						<input type="text" name="last_name" id="last_name" required><br>
+						<label for="email">Email Address:</label><div style="clear:both"></div>
+						<input type="email" name="email" id="email" required><br>
+						<label for="phone">Phone Number:</label><div style="clear:both"></div>
+						<input type="tel" name="phone" id="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required><br>
+						<div style="clear:both"></div>
+						<br>
+						<!--<h3>Message</h3>-->
+						<label for="subject">Message Subject:</label><div style="clear:both"></div>
+						<input type="text" name="subject" id="subject" required><br>
+						<label for="message">Message Body:</label><div style="clear:both"></div>
+						<textarea name="message" id="message" required></textarea> 
+						<br>
+						<button type="button" class="btn btn-default" id="submit" value="Send Email">Submit</button>
+						<br><br>
+					</form>  
+				</div>	
+			</article>
+		</div>
+		<!-- begin main -->
+		<!--<main>			
+		</main>-->
+
+		<!-- begin footer -->
+		<!--<div class="wrapper-for-content-outside-of-footer">
+		Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer
+		</div>-->
+		<footer class="footer-2" role="contentinfo">
+			<!--<p>Kevin Jacks - VICOM-126<br>MATC Fall 2016</p>-->
+			<ul>
+				<li><a href="#about-anchor">About</a></li>
+				<li><a href="#projects-anchor">Projects</a></li>
+				<li><a href="#skills-anchor">Skills</a></li>
+				<li><a href="#contact-anchor">Contact</a></li>
+			</ul>
+		</footer>
+
+	</body>
+
+</html>

@@ -1,0 +1,106 @@
+// This file loads any predefined styles, then inserts custom styles below
+
+
+/*----------------------------------------
+Imports
+----------------------------------------*/
+// Import Bourbon
+@import "bourbon/bourbon";
+// Import Neat
+@import "neat/neat";
+// Import Bitters
+@import "stylesheets/base/base";
+// Import Navigation
+@import "stylesheets/navigation";
+// Import Cards (projects)
+@import "stylesheets/cards";
+// Import Footer
+@import "stylesheets/footer";
+// Import Geometric article
+@import "stylesheets/geometric";
+// Import Flickity
+// @import "stylesheets/flickity.min.css";
+// Import Flickity Custom Styles
+@import "stylesheets/flickity-custom";
+// Import hover tile animation
+@import "stylesheets/hover-tile";
+
+
+/*----------------------------------------
+Custom Styles
+----------------------------------------*/
+// Set column structure for default desktop size
+#about, #projects, #skills, #contact, #carousel {
+    @include outer-container();
+}
+.row {
+    @include span-columns(12);
+}
+.row-contact {
+    @include span-columns(6 of 12);
+    @include shift(3 of 12);
+}
+.about-column {
+    @include span-columns(6 of 12);
+    // @include shift(1 of 12);
+}
+.skills-column {
+    @include span-columns(3 of 12);
+    @include shift(1 of 12);
+}
+
+// Set column structure for tablet size
+@media screen and (max-width: 768px) {
+    .row-contact, .about-column, .skills-column {
+        @include span-columns(12 of 12);
+        @include shift(0 of 12);
+    }
+    // .about-column {
+    //     @include span-columns(12 of 12);
+    // }
+}
+
+
+// Set column structure for phone size
+
+// Text Styles
+.about-column p {
+    text-align: justify;
+}
+
+html {
+    background-color: $base-background-color;
+}
+.base-bg, .secondary-bg {
+    width: 100%;
+    padding: 40px 0px 40px 0px;
+}
+
+.base-bg {
+    background-color: $base-background-color;
+}
+.secondary-bg {
+    background-color: $secondary-background-color;
+    .type-system-geometric p, .type-system-geometric h1 {
+        color: #fff;
+    }
+}
+
+// Image styles
+.checkbox {
+  @include size(30px);
+}
+
+// Form Styles
+textarea {
+    height: 150px;
+    min-height: 70px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    padding-bottom: 20px;
+}

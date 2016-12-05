@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,CAAE,CAAE,UAAU,CAAE,UAAU,CAE1B,IAAK,CAAE,WAAW,CAAE,UAAU,CAE9B,SAAU,CACR,UAAU,CAAE,IAAI,CAGlB,aAAc,CACZ,OAAO,CAAE,KAAK,CACd,MAAM,CAAE,KAAK,CAGf,oCAAuC,CACrC,aAAc,CACZ,MAAM,CAAE,KAAK",
+"sources": ["flickity-custom.scss"],
+"names": [],
+"file": "flickity-custom.css"
+}
