@@ -1,28 +1,39 @@
 /*
-Error: Undefined mixin 'media'.
-        on line 17 of final/code/stylesheets/hover-tile.scss, in `media'
-        from line 17 of final/code/stylesheets/hover-tile.scss
+Error: Undefined mixin 'position'.
+        on line 40 of final/code/stylesheets/modal.scss, in `position'
+        from line 40 of final/code/stylesheets/modal.scss
 
-12:   // border: 1px solid $base-border-color;
-13:   cursor: pointer;
-14:   height: $hover-tile-height;
-15:   margin-bottom: $base-line-height;
-16: 
-17:   @include media($medium-screen) {
-18:     width: 46%;
-19:   }
-20: 
-21:   .hover-tile-container {
-22:     height: $hover-tile-height;
+35:   .modal-trigger {
+36:     padding: 0.8em 1em;
+37:   }
+38: 
+39:   .modal-fade-screen { // overlay
+40:     @include position(fixed, 0);
+41:     background-color: rgba(#000, 0.85);
+42:     opacity: 0;
+43:     padding-top: 0.6em;
+44:     text-align: left;
+45:     transition: opacity 0.25s ease;
 
 Backtrace:
-final/code/stylesheets/hover-tile.scss:17:in `media'
-final/code/stylesheets/hover-tile.scss:17
+final/code/stylesheets/modal.scss:40:in `position'
+final/code/stylesheets/modal.scss:40
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `block in with_mixin'
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `with_mixin'
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
@@ -69,4 +80,4 @@ final/code/stylesheets/hover-tile.scss:17
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'media'.\A         on line 17 of final/code/stylesheets/hover-tile.scss, in `media'\A         from line 17 of final/code/stylesheets/hover-tile.scss\A \A 12:   // border: 1px solid $base-border-color;\A 13:   cursor: pointer;\A 14:   height: $hover-tile-height;\A 15:   margin-bottom: $base-line-height;\A 16: \A 17:   @include media($medium-screen) {\A 18:     width: 46%;\A 19:   }\A 20: \A 21:   .hover-tile-container {\A 22:     height: $hover-tile-height;"; }
+  content: "Error: Undefined mixin 'position'.\A         on line 40 of final/code/stylesheets/modal.scss, in `position'\A         from line 40 of final/code/stylesheets/modal.scss\A \A 35:   .modal-trigger {\A 36:     padding: 0.8em 1em;\A 37:   }\A 38: \A 39:   .modal-fade-screen { // overlay\A 40:     @include position(fixed, 0);\A 41:     background-color: rgba(#000, 0.85);\A 42:     opacity: 0;\A 43:     padding-top: 0.6em;\A 44:     text-align: left;\A 45:     transition: opacity 0.25s ease;"; }

@@ -810,15 +810,13 @@ body {
 }
 .hover-tile-outer {
   background-position: top;
-  background-size: cover;
-  border: 1px solid #ddd;
   cursor: pointer;
   height: 400px;
   margin-bottom: 1.5;
 }
 @media screen and (min-width: 600px) {
   .hover-tile-outer {
-    width: 40%;
+    width: 46%;
   }
 }
 .hover-tile-outer .hover-tile-container {
@@ -842,9 +840,11 @@ body {
 .hover-tile-outer .hover-tile-hidden p {
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.5;
+  padding: 0% 5% 5% 5%;
 }
 .hover-tile-outer .hover-tile-hidden h4 {
   margin: 0 0 0.5em 0;
+  padding: 5% 5% 0% 5%;
 }
 
 /*----------------------------------------
