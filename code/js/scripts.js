@@ -30,6 +30,27 @@ $(document).ready(function() {
       }
     });
   });
+
+  // Begin Modal
+  $(function() {
+    $("#modal-1").on("change", function() {
+      if ($(this).is(":checked")) {
+        $("body").addClass("modal-open");
+      } else {
+        $("body").removeClass("modal-open");
+      }
+    });
+
+    $(".modal-fade-screen, .modal-close").on("click", function() {
+      $(".modal-state:checked").prop("checked", false).change();
+    });
+
+    $(".modal-inner").on("click", function(e) {
+      e.stopPropagation();
+    });
+  });
+  // End Modal
+
 }); 
 // End Navigation
 
@@ -47,23 +68,3 @@ var flkty = new Flickity( '.main-carousel', {
   // options
 });
 // End Flickity
-
-// Begin Modal
-$(function() {
-  $("#modal-1").on("change", function() {
-    if ($(this).is(":checked")) {
-      $("body").addClass("modal-open");
-    } else {
-      $("body").removeClass("modal-open");
-    }
-  });
-
-  $(".modal-fade-screen, .modal-close").on("click", function() {
-    $(".modal-state:checked").prop("checked", false).change();
-  });
-
-  $(".modal-inner").on("click", function(e) {
-    e.stopPropagation();
-  });
-});
-// End Modal
