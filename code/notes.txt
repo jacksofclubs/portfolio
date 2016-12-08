@@ -6,3 +6,10 @@ sass --watch code --style expanded
 Roboto font:
 Use the following CSS rules to specify these families:
 font-family: 'Roboto', sans-serif;
+
+
+
+Final polishing before release
+==============================
+- cs3 compliant
+- no javascript errors
