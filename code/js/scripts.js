@@ -29,7 +29,7 @@ $(document).ready(function() {
         $("#js-navigation-menu").removeAttr("style");
       }
     });
-  });
+  }); // End Navigation
 
   // Begin Modal
   $(function() {
@@ -51,20 +51,19 @@ $(document).ready(function() {
   });
   // End Modal
 
+  // Begin Flickity
+  var elem = document.querySelector('.carousel');
+  var flkty = new Flickity( elem, {
+    // options
+    cellAlign: 'left',
+    contain: true
+  });
+
+  // element argument can be a selector string
+  //   for an individual element
+  var flkty = new Flickity( '.carousel', {
+    // options
+  });
+  // End Flickity
+
 }); 
-// End Navigation
-
-// Begin Flickity
-var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity( elem, {
-  // options
-  cellAlign: 'left',
-  contain: true
-});
-
-// element argument can be a selector string
-//   for an individual element
-var flkty = new Flickity( '.main-carousel', {
-  // options
-});
-// End Flickity
