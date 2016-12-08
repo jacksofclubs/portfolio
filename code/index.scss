@@ -32,8 +32,10 @@ Imports
 Custom Styles
 ----------------------------------------*/
 // Set column structure for default desktop size
-#about, #projects, #skills, #contact, #carousel {
+#about, #carousel, #skills, #contact {
     @include outer-container();
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .row {
     @include span-columns(12);
@@ -105,4 +107,12 @@ html, body {
 }
 h1 {
     padding-bottom: 20px;
+}
+#about {
+    margin-top: 35px;
+}
+.navigation {
+    position: fixed;
+    z-index: 10;
+    padding-left: 20px;
 }

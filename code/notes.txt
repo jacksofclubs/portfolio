@@ -1,4 +1,6 @@
 sass --watch styles.scss:styles.css
+sass --watch code --style expanded
+
 
 
 Roboto font:
