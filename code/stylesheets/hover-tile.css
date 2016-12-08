@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'media'.
-        on line 17 of final/stylesheets/hover-tile.scss, in `media'
-        from line 17 of final/stylesheets/hover-tile.scss
+        on line 17 of final/code/stylesheets/hover-tile.scss, in `media'
+        from line 17 of final/code/stylesheets/hover-tile.scss
 
-12:   border: 1px solid $base-border-color;
+12:   // border: 1px solid $base-border-color;
 13:   cursor: pointer;
 14:   height: $hover-tile-height;
 15:   margin-bottom: $base-line-height;
 16: 
 17:   @include media($medium-screen) {
-18:     width: 40%;
+18:     width: 46%;
 19:   }
 20: 
 21:   .hover-tile-container {
 22:     height: $hover-tile-height;
 
 Backtrace:
-final/stylesheets/hover-tile.scss:17:in `media'
-final/stylesheets/hover-tile.scss:17
+final/code/stylesheets/hover-tile.scss:17:in `media'
+final/code/stylesheets/hover-tile.scss:17
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `block in with_mixin'
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
@@ -69,4 +69,4 @@ final/stylesheets/hover-tile.scss:17
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'media'.\A         on line 17 of final/stylesheets/hover-tile.scss, in `media'\A         from line 17 of final/stylesheets/hover-tile.scss\A \A 12:   border: 1px solid $base-border-color;\A 13:   cursor: pointer;\A 14:   height: $hover-tile-height;\A 15:   margin-bottom: $base-line-height;\A 16: \A 17:   @include media($medium-screen) {\A 18:     width: 40%;\A 19:   }\A 20: \A 21:   .hover-tile-container {\A 22:     height: $hover-tile-height;"; }
+  content: "Error: Undefined mixin 'media'.\A         on line 17 of final/code/stylesheets/hover-tile.scss, in `media'\A         from line 17 of final/code/stylesheets/hover-tile.scss\A \A 12:   // border: 1px solid $base-border-color;\A 13:   cursor: pointer;\A 14:   height: $hover-tile-height;\A 15:   margin-bottom: $base-line-height;\A 16: \A 17:   @include media($medium-screen) {\A 18:     width: 46%;\A 19:   }\A 20: \A 21:   .hover-tile-container {\A 22:     height: $hover-tile-height;"; }
