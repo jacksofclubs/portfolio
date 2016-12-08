@@ -1106,4 +1106,9 @@ h1 {
   padding-left: 20px;
 }
 
+.modal .modal-inner {
+  width: 80%;
+  max-width: 1200px;
+}
+
 /*# sourceMappingURL=index.css.map */
