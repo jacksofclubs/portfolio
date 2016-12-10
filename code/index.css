@@ -2,6 +2,7 @@
 /*----------------------------------------
 Imports
 ----------------------------------------*/
+@import url(stylesheets/flickity.min.css);
 html {
   box-sizing: border-box;
 }
@@ -800,12 +801,17 @@ body {
 
 .carousel img {
   display: block;
-  height: 200px;
+  height: 400px;
 }
 
 @media screen and (min-width: 768px) {
   .carousel img {
     height: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel img {
+    height: 200px;
   }
 }
 .hover-tile-outer {
@@ -816,11 +822,11 @@ body {
 }
 @media screen and (min-width: 600px) {
   .hover-tile-outer {
-    height: 200px;
+    width: 40%;
   }
 }
 .hover-tile-outer .hover-tile-container {
-  height: 200px;
+  height: 400px;
   overflow: hidden;
 }
 .hover-tile-outer .hover-tile-container:hover > .hover-tile {
@@ -831,7 +837,7 @@ body {
   color: white;
   height: inherit;
   overflow: hidden;
-  padding: 0px;
+  padding: 1.5em;
   transition: all 0.2s ease-in-out;
 }
 .hover-tile-outer .hover-tile-hidden {
@@ -840,10 +846,29 @@ body {
 .hover-tile-outer .hover-tile-hidden p {
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.5;
-  padding: 0% 5% 5% 5%;
 }
 .hover-tile-outer .hover-tile-hidden h4 {
   margin: 0 0 0.5em 0;
+}
+
+.hover-tile-outer {
+  height: 400px;
+}
+@media screen and (min-width: 600px) {
+  .hover-tile-outer {
+    width: 46%;
+  }
+}
+.hover-tile-outer .hover-tile-container {
+  height: 400px;
+}
+.hover-tile-outer .hover-tile {
+  padding: 0px;
+}
+.hover-tile-outer .hover-tile-hidden p {
+  padding: 0% 5% 5% 5%;
+}
+.hover-tile-outer .hover-tile-hidden h4 {
   padding: 5% 5% 0% 5%;
 }
 
