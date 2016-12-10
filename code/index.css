@@ -816,11 +816,11 @@ body {
 }
 @media screen and (min-width: 600px) {
   .hover-tile-outer {
-    width: 46%;
+    height: 200px;
   }
 }
 .hover-tile-outer .hover-tile-container {
-  height: 400px;
+  height: 200px;
   overflow: hidden;
 }
 .hover-tile-outer .hover-tile-container:hover > .hover-tile {

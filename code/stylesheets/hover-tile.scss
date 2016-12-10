@@ -15,7 +15,9 @@
   margin-bottom: $base-line-height;
 
   @include media($medium-screen) {
-    width: 46%;
+    // width: 46%;
+    $hover-tile-height: 200px;
+    height: $hover-tile-height; 
   }
 
   .hover-tile-container {
