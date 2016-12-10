@@ -13,3 +13,4 @@ Final polishing before release
 ==============================
 - cs3 compliant
 - no javascript errors
+- alt tags filled on images

@@ -118,5 +118,25 @@ h1 {
 }
 .modal .modal-inner {
     width: 80%;
+    // height: 95%;
     max-width: 1200px;
+    max-height: 95%;
+    position: relative;
+    margin-top: -100px;
+}
+.modal-img {
+    display: block;
+    margin: 30px auto;
+}
+.modal .modal-inner h1 {
+    font-size: 28pt;
+    text-align: center;
+    // padding: 20px;
+}
+.modal-intro, .modal-content {
+    text-align: justify;
+}
+.modal-footer {
+    text-align: center;
+    margin: 20px auto;
 }
