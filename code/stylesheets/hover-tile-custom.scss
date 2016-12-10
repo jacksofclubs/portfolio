@@ -8,21 +8,21 @@
   // background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png");
   // background-color: beige;
   // background-position: top;
-  // background-size: cover;
+  background-size: cover;
   // border: 1px solid $base-border-color;
   // cursor: pointer;
   height: $hover-tile-height;
   // margin-bottom: $base-line-height;
 
   @include media($medium-screen) {
-    width: 46%;
+    // width: 46%;
     
     // $hover-tile-height: 200px;
     // height: $hover-tile-height; 
   }
 
   .hover-tile-container {
-    height: $hover-tile-height;
+    // height: $hover-tile-height;
   //   overflow: hidden;
   }
 
@@ -52,5 +52,23 @@
       // margin: 0 0 0.5em 0;
       padding: 5% 5% 0% 5%;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  // .hover-tile-container {
+  //   height: 200px;
+  // }
+}
+@media screen and ( min-width: 768px ) {
+  .hover-tile-outer {
+    height: 400px;
+    width: 554px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hover-tile-outer {
+    height: 200px;
+    width: 277px;
   }
 }

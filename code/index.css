@@ -799,21 +799,35 @@ body {
   background: #EEE;
 }
 
-.carousel img {
+.carousel-cell img {
   display: block;
-  height: 400px;
 }
 
 @media screen and (min-width: 768px) {
-  .carousel img {
+  .carousel-cell {
     height: 400px;
+    width: 554px;
   }
 }
 @media screen and (max-width: 768px) {
-  .carousel img {
+  .carousel-cell {
     height: 200px;
+    width: 277px;
   }
 }
+.flickity-prev-next-button {
+  border-radius: 5px;
+  background: #333;
+}
+
+.flickity-prev-next-button:hover {
+  background: #18bc9c;
+}
+
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+
 .hover-tile-outer {
   background-position: top;
   cursor: pointer;
@@ -852,14 +866,7 @@ body {
 }
 
 .hover-tile-outer {
-  height: 400px;
-}
-@media screen and (min-width: 600px) {
-  .hover-tile-outer {
-    width: 46%;
-  }
-}
-.hover-tile-outer .hover-tile-container {
+  background-size: cover;
   height: 400px;
 }
 .hover-tile-outer .hover-tile {
@@ -872,6 +879,18 @@ body {
   padding: 5% 5% 0% 5%;
 }
 
+@media screen and (min-width: 768px) {
+  .hover-tile-outer {
+    height: 400px;
+    width: 554px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hover-tile-outer {
+    height: 200px;
+    width: 277px;
+  }
+}
 .modal label {
   cursor: pointer;
   margin-bottom: 0;

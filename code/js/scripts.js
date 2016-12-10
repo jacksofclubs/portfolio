@@ -52,7 +52,7 @@ $(document).ready(function() {
   // End Modal
 
   // Begin Flickity
-  var elem = document.querySelector('.carousel');
+  var elem = document.querySelector('.main-carousel');
   var flkty = new Flickity( elem, {
     // options
     cellAlign: 'left',
@@ -61,7 +61,7 @@ $(document).ready(function() {
 
   // element argument can be a selector string
   //   for an individual element
-  var flkty = new Flickity( '.carousel', {
+  var flkty = new Flickity( '.main-carousel', {
     // options
   });
   // End Flickity
