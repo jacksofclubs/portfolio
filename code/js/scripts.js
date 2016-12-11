@@ -33,10 +33,14 @@ $(document).ready(function() {
       }
     });
   });
-  // When a navmenu option is clicked, hide the navbar
+
+  // When a navmenu option is clicked during mobile view, hide the navmenu options
   menuOptions.on("click", function(e) {
-    if(menuOptions.is(":visible")) {
-      menuOptions.slideToggle(); // Default: 400
+    var windowWidth = $(document).width();
+    if(menuOptions.is(":visible") && windowWidth < 900) {
+      menuOptions.slideToggle(function() {
+        menuOptions.removeAttr("style");
+      });
     }
   });
   // End Navigation
