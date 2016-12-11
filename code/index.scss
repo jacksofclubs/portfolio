@@ -13,14 +13,13 @@ Imports
 // Import Navigation
 @import "stylesheets/navigation";
 // Import Cards (projects)
-@import "stylesheets/cards";
+// @import "stylesheets/cards";
 // Import Footer
 @import "stylesheets/footer";
 // Import Geometric article
-@import "stylesheets/geometric";
+// @import "stylesheets/geometric";
 // Import Flickity
 @import "stylesheets/flickity.min.css";
-// Import Flickity Custom Styles
 @import "stylesheets/flickity-custom";
 // Import hover tile animation
 @import "stylesheets/hover-tile";
@@ -82,6 +81,26 @@ html {
     .type-system-geometric p, .type-system-geometric h1 {
         color: #fff;
     }
+}
+.title {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 0px;
+    font-size: 4.75em;
+}
+.subtitle {
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.75em;
+}
+.divider {
+    max-width: 40%;
+    border-top: solid 4px;
+    border-color: #fff;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 // Image styles
