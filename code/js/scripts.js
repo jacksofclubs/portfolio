@@ -19,17 +19,27 @@ $(window).resize(function() {
 });
 
 $(document).ready(function() {
-  var menuToggle = $("#js-mobile-menu").unbind();
-  $("#js-navigation-menu").removeClass("show");
 
+  var menuToggle = $("#js-mobile-menu").unbind();
+  var menuOptions = $("#js-navigation-menu");
+  menuOptions.removeClass("show");
+
+  // When the menu icon is clicked, toggle show/hide
   menuToggle.on("click", function(e) {
     e.preventDefault();
-    $("#js-navigation-menu").slideToggle(function(){
-      if($("#js-navigation-menu").is(":hidden")) {
-        $("#js-navigation-menu").removeAttr("style");
+      menuOptions.slideToggle(function() {
+        if(menuOptions.is(":hidden")) {
+        menuOptions.removeAttr("style");
       }
     });
-  }); // End Navigation
+  });
+  // When a navmenu option is clicked, hide the navbar
+  menuOptions.on("click", function(e) {
+    if(menuOptions.is(":visible")) {
+      menuOptions.slideToggle(); // Default: 400
+    }
+  });
+  // End Navigation
 
   // Begin Modal
   $(function() {
@@ -66,4 +76,5 @@ $(document).ready(function() {
   });
   // End Flickity
 
-}); 
+});
+// End document.ready
