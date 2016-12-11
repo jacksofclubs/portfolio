@@ -55,20 +55,20 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  // .hover-tile-container {
-  //   height: 200px;
-  // }
-}
-@media screen and ( min-width: 768px ) {
-  .hover-tile-outer {
-    height: 400px;
-    width: 554px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .hover-tile-outer {
-    height: 200px;
-    width: 277px;
-  }
-}
+// @media screen and (max-width: $navbar-limit) {
+//   // .hover-tile-container {
+//   //   height: 200px;
+//   // }
+// }
+// @media screen and ( min-width: $navbar-limit ) {
+//   .hover-tile-outer {
+//     height: 400px;
+//     width: 554px;
+//   }
+// }
+// @media screen and (max-width: $navbar-limit) {
+//   .hover-tile-outer {
+//     height: 200px;
+//     width: 277px;
+//   }
+// }

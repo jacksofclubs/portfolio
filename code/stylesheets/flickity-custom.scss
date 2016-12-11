@@ -13,18 +13,18 @@ body { font-family: sans-serif; }
   // height: 400px;
 }
 
-@media screen and ( min-width: 768px ) {
-  .carousel-cell {
-    height: 400px;
-    width: 554px;
-  }
-}
-@media screen and (max-width: 768px) {
-    .carousel-cell {
-    height: 200px;
-    width: 277px;
-  }
-}
+// @media screen and ( min-width: $navbar-limit ) {
+//   .carousel-cell {
+//     height: 400px;
+//     width: 554px;
+//   }
+// }
+// @media screen and (max-width: $navbar-limit) {
+//     .carousel-cell {
+//     height: 200px;
+//     width: 277px;
+//   }
+// }
 .flickity-prev-next-button {
   // width: 30px;
   // height: 30px;

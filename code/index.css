@@ -803,18 +803,6 @@ body {
   display: block;
 }
 
-@media screen and (min-width: 768px) {
-  .carousel-cell {
-    height: 400px;
-    width: 554px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .carousel-cell {
-    height: 200px;
-    width: 277px;
-  }
-}
 .flickity-prev-next-button {
   border-radius: 5px;
   background: #333;
@@ -879,18 +867,6 @@ body {
   padding: 5% 5% 0% 5%;
 }
 
-@media screen and (min-width: 768px) {
-  .hover-tile-outer {
-    height: 400px;
-    width: 554px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .hover-tile-outer {
-    height: 200px;
-    width: 277px;
-  }
-}
 .modal label {
   cursor: pointer;
   margin-bottom: 0;
@@ -1085,18 +1061,6 @@ Custom Styles
   margin-right: 0;
 }
 
-@media screen and (max-width: 768px) {
-  .row-contact, .about-column, .skills-column {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    margin-left: 0%;
-  }
-  .row-contact:last-child, .about-column:last-child, .skills-column:last-child {
-    margin-right: 0;
-  }
-}
 .about-column p {
   text-align: justify;
 }
@@ -1107,7 +1071,7 @@ html {
 
 .base-bg, .secondary-bg {
   width: 100%;
-  padding: 40px 0px 40px 0px;
+  padding: 60px 0px;
 }
 
 .base-bg {
@@ -1174,6 +1138,39 @@ h1 {
 .modal-footer {
   text-align: center;
   margin: 20px auto;
+}
+
+/* Custom Responsive CSS
+-------------------------------------------------- */
+@media all and (min-width: 768px) {
+  .hover-tile-outer, .carousel-cell {
+    height: 400px;
+    width: 554px;
+  }
+}
+@media all and (max-width: 768px) {
+  .row-contact, .about-column, .skills-column {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-left: 0%;
+  }
+  .row-contact:last-child, .about-column:last-child, .skills-column:last-child {
+    margin-right: 0;
+  }
+
+  .hover-tile-outer, .carousel-cell {
+    height: 200px;
+    width: 277px;
+  }
+}
+@media all and (max-width: 600px) {
+  .flickity-prev-next-button {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

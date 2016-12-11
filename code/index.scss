@@ -55,19 +55,12 @@ Custom Styles
 }
 
 // Set column structure for tablet size
-@media screen and (max-width: 768px) {
-    .row-contact, .about-column, .skills-column {
-        @include span-columns(12 of 12);
-        @include shift(0 of 12);
-    }
-    // .about-column {
-    //     @include span-columns(12 of 12);
-    // }
-}
-
-
-// Set column structure for phone size
-
+// @media screen and (max-width: $navbar-limit) {
+//     .row-contact, .about-column, .skills-column {
+//         @include span-columns(12 of 12);
+//         @include shift(0 of 12);
+//     }
+// }
 // Text Styles
 .about-column p {
     text-align: justify;
@@ -78,7 +71,7 @@ html {
 }
 .base-bg, .secondary-bg {
     width: 100%;
-    padding: 40px 0px 40px 0px;
+    padding: 60px 0px;
 }
 
 .base-bg {
@@ -141,4 +134,46 @@ h1 {
 .modal-footer {
     text-align: center;
     margin: 20px auto;
+}
+
+/* Custom Responsive CSS
+-------------------------------------------------- */
+
+// Large screen size and up
+@media all and (min-width: $large-screen) {
+
+}
+
+// Tablet size screen
+@media all and (min-width: $medium-screen) and (max-width: $large-screen) {
+
+}
+
+// Navbar and carousel resizing for large screens
+@media all and (min-width: $navbar-limit) {
+    .hover-tile-outer, .carousel-cell {
+        height: 400px;
+        width: 554px;
+    }
+}
+
+// Navbar and carousel resizing for large small screens
+@media all and (max-width: $navbar-limit) {
+    .row-contact, .about-column, .skills-column {
+        @include span-columns(12 of 12);
+        @include shift(0 of 12);
+    }
+    .hover-tile-outer, .carousel-cell {
+        height: 200px;
+        width: 277px;
+    }
+}
+
+// Phone size screen
+@media all and (max-width: $medium-screen) {
+    .flickity-prev-next-button {
+        width: 30px;
+        height: 30px;
+        padding: 0;
+    }
 }
