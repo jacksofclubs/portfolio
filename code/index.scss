@@ -26,6 +26,8 @@ Imports
 @import "stylesheets/hover-tile-custom";
 // Import modal
 @import "stylesheets/modal";
+// Include Font Awesome
+@import "font-awesome-4.7.0/css/font-awesome.min.css";
 
 
 /*----------------------------------------
@@ -101,6 +103,11 @@ html {
     border-color: #fff;
     margin-left: 30%;
     margin-right: 30%;
+}
+.icons {
+    text-align: center;
+    font-size: 50px;
+    // color: #fff;
 }
 
 // Image styles

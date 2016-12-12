@@ -3,6 +3,7 @@
 Imports
 ----------------------------------------*/
 @import url(stylesheets/flickity.min.css);
+@import url(font-awesome-4.7.0/css/font-awesome.min.css);
 html {
   box-sizing: border-box;
 }
@@ -930,6 +931,11 @@ html {
   border-color: #fff;
   margin-left: 30%;
   margin-right: 30%;
+}
+
+.icons {
+  text-align: center;
+  font-size: 50px;
 }
 
 .checkbox {
