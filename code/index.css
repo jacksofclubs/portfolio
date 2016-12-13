@@ -879,8 +879,7 @@ Custom Styles
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%;
-  margin-left: 8.5298%;
+  width: 48.82117%;
 }
 .skills-column:last-child {
   margin-right: 0;
@@ -914,8 +913,8 @@ html {
 .title {
   text-align: center;
   font-size: 60px;
-  padding-bottom: 0px;
   font-size: 4.75em;
+  margin-bottom: auto;
 }
 
 .subtitle {
@@ -924,6 +923,7 @@ html {
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 1.75em;
+  text-transform: capitalize;
 }
 
 .divider {
@@ -937,6 +937,10 @@ html {
 .icons {
   text-align: center;
   font-size: 50px;
+}
+
+.footer-2 {
+  background: #333;
 }
 
 .checkbox {
@@ -965,7 +969,7 @@ h2 {
 }
 
 #about {
-  margin-top: 35px;
+  margin-top: 50px;
 }
 
 .navigation {
@@ -1000,6 +1004,9 @@ h2 {
   margin: 20px auto;
 }
 
+.skills-column {
+  text-align: center;
+}
 .skills-column .fa {
   font-size: 30px;
   color: lightgreen;
@@ -1007,6 +1014,14 @@ h2 {
 }
 .skills-column .fa-text {
   color: #ddd;
+}
+.skills-column .skills-subcolumn {
+  display: inline-block;
+  text-align: left;
+}
+
+.modal .modal-inner h1 {
+  text-transform: none;
 }
 
 /* Custom Responsive CSS
@@ -1033,12 +1048,34 @@ h2 {
     height: 200px;
     width: 277px;
   }
+
+  .skills-column {
+    text-align: left;
+    padding-left: 20px;
+  }
 }
 @media all and (max-width: 600px) {
   .flickity-prev-next-button {
     width: 30px;
     height: 30px;
     padding: 0;
+  }
+
+  .title {
+    font-size: 3.00em;
+  }
+
+  h2 {
+    font-size: 2.0em;
+  }
+
+  .subtitle {
+    font-size: 1.5em;
+  }
+
+  .skills-column .fa {
+    font-size: 25px;
+    line-height: 190%;
   }
 }
 

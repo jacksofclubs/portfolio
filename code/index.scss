@@ -51,8 +51,8 @@ Custom Styles
     // @include shift(1 of 12);
 }
 .skills-column {
-    @include span-columns(3 of 12);
-    @include shift(1 of 12);
+    @include span-columns(6 of 12);
+    // @include shift(1 of 12);
 }
 
 // Set column structure for tablet size
@@ -88,8 +88,8 @@ html {
 .title {
     text-align: center;
     font-size: 60px;
-    padding-bottom: 0px;
     font-size: 4.75em;
+    margin-bottom: auto;
 }
 .subtitle {
     text-align: center;
@@ -97,6 +97,7 @@ html {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 1.75em;
+    text-transform: capitalize;
 }
 .divider {
     max-width: 40%;
@@ -109,6 +110,9 @@ html {
     text-align: center;
     font-size: 50px;
     // color: #fff;
+}
+.footer-2 {
+    background: $dark-gray;
 }
 
 // Image styles
@@ -135,7 +139,7 @@ h2 {
     text-transform: uppercase;
 }
 #about {
-    margin-top: 35px;
+    margin-top: 50px;
 }
 .navigation {
     position: fixed;
@@ -168,6 +172,7 @@ h2 {
     margin: 20px auto;
 }
 .skills-column {
+    text-align: center;
     .fa {
         font-size: 30px;
         color: lightgreen;
@@ -176,6 +181,13 @@ h2 {
     .fa-text {
         color: $light-gray;
     }
+    .skills-subcolumn {
+        display: inline-block;
+        text-align: left;
+    }
+}
+.modal .modal-inner h1 {
+    text-transform: none;
 }
 
 /* Custom Responsive CSS
@@ -209,6 +221,10 @@ h2 {
         height: 200px;
         width: 277px;
     }
+    .skills-column {
+        text-align: left;
+        padding-left: 20px;
+    }
 }
 
 // Phone size screen
@@ -217,5 +233,18 @@ h2 {
         width: 30px;
         height: 30px;
         padding: 0;
+    }
+    .title {
+        font-size: 3.00em;
+    }
+    h2 {
+        font-size: 2.0em;
+    }
+    .subtitle {
+        font-size: 1.5em;
+    }
+    .skills-column .fa {
+        font-size: 25px;
+        line-height: 190%;
     }
 }
