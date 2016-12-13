@@ -48,7 +48,6 @@
 		</header>
 
 
-		<!--begin top image-->
 
 
 		<!--begin about-->
@@ -75,6 +74,20 @@
 			</article>	
 		</div>
 
+		<!--validation confirmation-->
+		<?php
+			// $validation = "";
+			if (isset($_GET['validation'])) {
+			$validation = $_GET['validation'];
+
+				if ($validation == "true") {
+					echo "<script type='text/javascript'>alert('Submitted Successfully!')</script>";
+				} else {
+					echo "<script type='text/javascript'>alert('Failed!')</script>";
+				}
+			}
+			// echo ("Validation result is: $validation");
+		?>
 
 		<!--begin portfolio-->
 		<a name="portfolio-anchor"></a>
@@ -236,7 +249,7 @@
 					<h1>Contact</h1>
 				</div>
 				<div class="row-contact">
-					<form action="contact_me.php" method="post" name="contact_form" id="contact_form" enctype=”multipart/form-data”>
+					<form action="contact_me.php" method="post" name="contact_form" id="contact_form" onSubmit="submitForm(this)" enctype=”multipart/form-data”>
 						<label for="name">Name:</label><div style="clear:both"></div>
 						<input type="text" name="name" id="name" required><br>						
 						<label for="email">Email Address:</label><div style="clear:both"></div>
@@ -247,7 +260,7 @@
 						<label for="message">Message:</label><div style="clear:both"></div>
 						<textarea name="message" id="message" required></textarea> 
 						<br>
-						<button type="submit" class="btn btn-default" id="submit" value="submit">Submit</button>
+						<button type="submit" class="btn btn-default" id="submit" name="btnSubmit" value="submit">Submit</button>
 						<br><br>
 					</form>  
 				</div>	

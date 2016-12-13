@@ -21,7 +21,17 @@ $email_subject = "Email sent through portfolio website by $name";
 $email_body = "You have received an email message through your personal portfolio website.\n\n"."Message is as follows:\n\nSent From: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
 $headers = "From: noreply@kevinjackswi.com\n";
 $headers .= "Reply-To: $email_address";	
-mail($to,$email_subject,$email_body,$headers);
+// mail($to,$email_subject,$email_body,$headers);
+
+if (mail($to,$email_subject,$email_body,$headers)) {
+    header("Location: http://graph-art.matc.edu/jacksk/vicom126/final/index.php?validation=true"); // from home
+	// header("Location: http://mca.matc.edu/jacksk/vicom126/final/index.php?validation=true"); // from work
+} else {
+    header("Location: http://graph-art.matc.edu/jacksk/vicom126/final/index.php?validation=false"); // from home
+	// header("Location: http://mca.matc.edu/jacksk/vicom126/final/index.php?validation=false"); // from work
+}
+// die();
+
 
 echo "Message has been sent successfully!";
 // var_dump($_POST); // For testing

@@ -82,3 +82,10 @@ $(document).ready(function() {
 
 });
 // End document.ready
+
+// Called when form submitted
+function submitForm(formobj) {
+    formobj.btnSubmit.value = "Processing";
+    formobj.btnSubmit.disabled = true;
+    return true;
+}
