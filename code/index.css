@@ -686,7 +686,7 @@ body {
   padding: 0px;
 }
 .hover-tile-outer .hover-tile-hidden p {
-  padding: 0% 5% 5% 5%;
+  padding: 0% 5% 0% 5%;
 }
 .hover-tile-outer .hover-tile-hidden h4 {
   padding: 5% 5% 0% 5%;
@@ -1036,6 +1036,10 @@ h2 {
   color: #ddd;
 }
 
+.modal .modal-trigger {
+  padding-left: 5%;
+}
+
 /* Custom Responsive CSS
 -------------------------------------------------- */
 @media all and (min-width: 768px) {
@@ -1064,6 +1068,10 @@ h2 {
   .skills-column {
     text-align: left;
     padding-left: 20px;
+  }
+
+  .hover-tile-outer .hover-tile-hidden p {
+    visibility: hidden;
   }
 }
 @media all and (max-width: 600px) {

@@ -60,13 +60,13 @@
             <h2 class="subtitle">Web Development - Software Applications</h2>
             <div class="row">
                 <div class="about-column">
-                    <p>I'm Kevin Jacks. I used to be an engineer but switched careers to follow my passion of software development. I'm currently
-                        finishing up my schooling at MATC with dual associate degrees: Web and Software Developer & Mobile Applications Developer.
-                        I currently work as a Software Developer on a web application providing ISP solution software.</p>
+                    <p>I'm Kevin Jacks.  I used to be an engineer but switched careers to follow my passion of software development.  I'm currently
+                        finishing up my schooling at Milwaukee Area Technical College with dual associate degrees: Web and Software Developer & Mobile Applications Developer.
+                         I work full-time as a Software Developer on a web application providing ISP software solutions.</p>
                 </div>
                 <div class="about-column">
-                    <p>I grew up on a dairy farm in rural central Wisconsin. I received a Bachelor's Degree from UW-Stout in Engineering Technology
-                        and worked as an Energy Engineer for four years before switching to software development. I currently live in the Milwaukee
+                    <p>I grew up on a dairy farm in rural central Wisconsin.  I received a Bachelor's Degree from UW-Stout in Engineering Technology
+                        and worked as an Energy Engineer for four years before switching to software development.  I currently live in the Milwaukee
                         area with my wife Tracey and 2 year old son Jameson.</p>
                 </div>
             </div>
@@ -117,7 +117,7 @@
                             <div class="hover-tile hover-tile-visible"><img src="images/cabin.png" alt=""></div>
                             <div class="hover-tile hover-tile-hidden">
                                 <h4>Online Deer Registration Website</h4>
-                                <p>Lorem ipsum dolor provident eligendi.</p>
+                                <p>A mock-up website that allows you to register your deer with a fast and responsive online form.  View the results of the database from an administration page.</p>
                                 <div class="modal">
                                     <label for="modal-1">
                                         <div class="modal-trigger">Click to View Project</div>
@@ -133,7 +133,7 @@
                             <div class="hover-tile hover-tile-visible"><img src="images/mobile2.png" alt=""></div>
                             <div class="hover-tile hover-tile-hidden">
                                 <h4>Deer Hunting License Android App</h4>
-                                <p>Lorem ipsum dolor provident eligendi.</p>
+                                <p>A mock-up app for the Android platform that allows you to purchase a deer hunting license and save the information as proof of purchase.</p>
                                 <div class="modal">
                                     <label for="modal-2">
                                         <div class="modal-trigger">Click to View Project</div>
@@ -149,7 +149,7 @@
                             <div class="hover-tile hover-tile-visible"><img src="images/shopping2.png" alt=""></div>
                             <div class="hover-tile hover-tile-hidden">
                                 <h4>Grocery List Application</h4>
-                                <p>Lorem ipsum dolor provident eligendi.</p>
+                                <p>Keep track of your grocery list with this handy desktop application.  Allows you to add, update, and delete items.</p>
                                 <div class="modal">
                                     <label for="modal-3">
                                         <div class="modal-trigger">Click to View Project</div>
@@ -165,7 +165,7 @@
                             <div class="hover-tile hover-tile-visible"><img src="images/webcode2.png" alt=""></div>
                             <div class="hover-tile hover-tile-hidden">
                                 <h4>Gaming Group Website</h4>
-                                <p>Lorem ipsum dolor provident eligendi.</p>
+                                <p>A great looking website that runs completely on the client side.  This site serves as a central hub for a social group.  The first website I ever created.</p>
                                 <div class="modal">
                                     <label for="modal-4">
                                         <div class="modal-trigger">Click to View Project</div>
@@ -181,7 +181,7 @@
                             <div class="hover-tile hover-tile-visible"><img src="images/rocket2.png" alt=""></div>
                             <div class="hover-tile hover-tile-hidden">
                                 <h4>Space-Themed Trivia Game</h4>
-                                <p>Lorem ipsum dolor provident eligendi.</p>
+                                <p>Test your space knowledge with this trivia game.  Fun for all ages.</p>
                                 <div class="modal">
                                     <label for="modal-5">
                                         <div class="modal-trigger">Click to View Project</div>
@@ -197,7 +197,7 @@
                             <div class="hover-tile hover-tile-visible"><img src="images/circus.png" alt=""></div>
                             <div class="hover-tile hover-tile-hidden">
                                 <h4>Halloween eCommerce Site</h4>
-                                <p>Lorem ipsum dolor provident eligendi.</p>
+                                <p>A one-stop shop for all your Halloween needs!  A great selection of masks and other items.</p>
                                 <div class="modal">
                                     <label for="modal-6">
                                         <div class="modal-trigger">Click to View Project</div>
@@ -213,10 +213,10 @@
                             <div class="hover-tile hover-tile-visible"><img src="images/submarine.png" alt=""></div>
                             <div class="hover-tile hover-tile-hidden">
                                 <h4>Baby Toys eCommerce Site</h4>
-                                <p>Lorem ipsum dolor provident eligendi.</p>
+                                <p>Browse our selection of baby toys on a fast, responsive website that looks great on any device.</p>
                                 <div class="modal">
                                     <label for="modal-7">
-                                        <div class="modal-trigger">Click to View Project</div>
+                                        <div class="modal-trigger" >Click to View Project</div>
                                     </label>
                                 </div>
                             </div>
@@ -240,20 +240,20 @@
                             <br>
                             <i class="fa fa-check-square-o" aria-hidden="true"><span class="fa-text">&nbsp;SQL</span></i>
                             <br>
-                            <i class="fa fa-check-square-o" aria-hidden="true"><span class="fa-text">&nbsp;Linux</span></i>
+                            <i class="fa fa-check-square-o" aria-hidden="true"><span class="fa-text">&nbsp;ASP.NET</span></i>
                             <br>
-                            <i class="fa fa-check-square-o" aria-hidden="true"><span class="fa-text">&nbsp;Back End</span></i>
+                            <i class="fa fa-check-square-o" aria-hidden="true"><span class="fa-text">&nbsp;Java</span></i>
                         </div>
                     </div>
                     <div class="skills-column">
                         <div class="skills-subcolumn">
+                            <i class="fa fa-check-square-o" aria-hidden="true"><span class="fa-text">&nbsp;C#</span></i>
+                            <br>
                             <i class="fa fa-check-square-o" aria-hidden="true"><span class="fa-text">&nbsp;JavaScript</span></i>
                             <br>
-                            <i class="fa fa-check-square-o" aria-hidden="true"><span class="fa-text">&nbsp;ASP.NET</span></i>
+                            <i class="fa fa-check-square-o" aria-hidden="true"><span class="fa-text">&nbsp;jQuery</span></i>
                             <br>
-                            <i class="fa fa-check-square-o" aria-hidden="true"><span class="fa-text">&nbsp;Java</span></i>
-                            <br>
-                            <i class="fa fa-check-square-o" aria-hidden="true"><span class="fa-text">&nbsp;Front-End</span></i>
+                            <i class="fa fa-check-square-o" aria-hidden="true"><span class="fa-text">&nbsp;SASS</span></i>
                         </div>
                     </div>
                 </div>
@@ -272,17 +272,17 @@
                     <form action="contact_me.php" method="post" name="contact_form" id="contact_form" onSubmit="submitForm(this)" enctype=”multipart/form-data”>
                         <label for="name">Name:</label>
                         <div style="clear:both"></div>
-                        <input type="text" name="name" id="name" required><br>
+                        <input type="text" name="name" id="name" placeholder="Your Full Name" required><br>
                         <label for="email">Email Address:</label>
                         <div style="clear:both"></div>
-                        <input type="email" name="email" id="email" required><br>
+                        <input type="email" name="email" id="email" placeholder="yourname@example.com" required><br>
                         <label for="phone">Phone Number:</label>
                         <div style="clear:both"></div>
-                        <input type="tel" name="phone" id="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required><br>
+                        <input type="tel" name="phone" id="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="555-555-5555" required><br>
                         <div style="clear:both"></div>
                         <label for="message">Message:</label>
                         <div style="clear:both"></div>
-                        <textarea name="message" id="message" required></textarea>
+                        <textarea name="message" id="message" placeholder="Your message here" required></textarea>
                         <br>
                         <button type="submit" class="btn btn-default" id="submit" name="btnSubmit" value="submit">Submit</button>
                         <br><br>
@@ -306,6 +306,7 @@
                     <img class="modal-img" src="images/webDeer.JPG" alt="">
                     <p class="modal-content">The History page allows you to view all records in the database. You can also filter the results using the search function,
                         and watch the results table update in real time.</p>
+                    <a href="http://kevinjackswi.com/projects/web-deer-registration/index.html#/">View Project Website</a>
                     <p class="modal-footer">
                         Class: <strong>ITDEV-161 (Web Programming 1)</strong><br> Date: <strong>December 2015</strong><br> Built Using: <strong>PHP, JavaScript, MySQL, Bootstrap, AngularJS, AJAX</strong>
                     </p>
@@ -380,7 +381,7 @@
                     <p class="modal-intro">The Space-Themed Trivia Game is just what it sounds like - a trivia game that you can play to test your knowledge of
                         space and the solar system! Test your wits and see how you score against your friends.</p>
                     <img class="modal-img" src="images/trivia.PNG" alt="">
-                    <p class="modal-content">The Trivia Game was one of the first GUI programs I created. Written in C# for the desktop, the programs reads a series
+                    <p class="modal-content">The Trivia Game was one of the first GUI programs I created. Written in C# for the desktop, the program reads a series
                         of questions from a text file and saves them in an array. It keeps track of your score and informs you of the correct
                         answer if you are wrong.</p>
                     <p class="modal-footer">
@@ -396,11 +397,11 @@
                 <div class="modal-inner">
                     <div class="modal-close" for="modal-6"></div>
                     <h1>Halloween eCommerce Site</h1>
-                    <p class="modal-intro">The Halloween eCommerce Site was an applciation built on ASP.NET.</p>
+                    <p class="modal-intro">The Halloween eCommerce Site is a mock-up online store.  Browse the available products, add items to your cart, and check out once you are ready.</p>
                     <img class="modal-img" src="#" alt="">
-                    <p class="modal-content">The store allows you to show around, view product details, and add items to your cart.</p>
+                    <p class="modal-content">This website has two versions: one built on PHP and one built on ASP.NET.  The information is stored in a MySQL database.  All the product information is being accessed from the database and presented to the user.</p>
                     <p class="modal-footer">
-                        Class: <strong>ITDEV-161 (Web Programming 1)</strong><br> Date: <strong>May 2016</strong><br> Built Using: <strong>ASP.NET</strong>
+                        Class: <strong>ITDEV-161 (Web Programming 1)</strong><br> Date: <strong>May 2016</strong><br> Built Using: <strong>PHP, ASP.NET, MySQL</strong>
                     </p>
                 </div>
             </div>
@@ -412,9 +413,10 @@
                 <div class="modal-inner">
                     <div class="modal-close" for="modal-7"></div>
                     <h1>Baby Toys eCommerce Site</h1>
-                    <p class="modal-intro">The Baby Toys eCommerce Site is a mock-up online store built to showcase how a responsive site can be built using Bootstrap.</p>
+                    <p class="modal-intro">The Baby Toys eCommerce Site is a mock-up online store that allows you to browse products, check recall information, and contact the store. </p>
                     <img class="modal-img" src="#" alt="">
-                    <p class="modal-content">The site will scale well to any size device, from large desktop monitor to a smartphone device.</p>
+                    <a href="http://kevinjackswi.com/projects/baby-toys/">View Project Website</a>
+                    <p class="modal-content">The website was built to showcase how a responsive site can be created using Bootstrap.  It will scale well to any size device, from a large desktop monitor to a smartphone device.</p>
                     <p class="modal-footer">
                         Class: <strong>ITDEV-161 (Web Programming 1)</strong><br> Date: <strong>November 2106</strong><br> Built Using: <strong>HTML, CSS, Bootstrap</strong>
                     </p>

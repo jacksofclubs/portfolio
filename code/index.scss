@@ -210,6 +210,9 @@ h2 {
         color: $light-gray;
     }
 }
+.modal .modal-trigger {
+    padding-left: 5%;
+}
 
 /* Custom Responsive CSS
 -------------------------------------------------- */
@@ -246,6 +249,9 @@ h2 {
         text-align: left;
         padding-left: 20px;
     }
+    .hover-tile-outer .hover-tile-hidden p {
+        visibility: hidden;
+    }    
 }
 
 // Phone size screen
