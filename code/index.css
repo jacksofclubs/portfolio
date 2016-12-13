@@ -1024,6 +1024,18 @@ h2 {
   text-transform: none;
 }
 
+.footer-2 .footer-social .fa-github-square::before,
+.footer-2 .footer-social .fa-linkedin-square::before {
+  font-size: 40px;
+}
+
+.icons a {
+  color: #333;
+}
+.icons a :hover {
+  color: #ddd;
+}
+
 /* Custom Responsive CSS
 -------------------------------------------------- */
 @media all and (min-width: 768px) {

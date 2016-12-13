@@ -189,6 +189,27 @@ h2 {
 .modal .modal-inner h1 {
     text-transform: none;
 }
+.footer-2 {
+    .footer-social {
+        .fa-github-square::before, 
+        .fa-linkedin-square::before {
+            font-size: 40px;
+        }        
+    }
+}
+.icons {
+    .fa-github-square::before,
+    .fa-linkedin-square::before {
+        // background: $dark-gray;
+        // color: $dark-gray;
+    }
+    a {
+        color: $dark-gray;
+    }
+    a :hover {
+        color: $light-gray;
+    }
+}
 
 /* Custom Responsive CSS
 -------------------------------------------------- */
