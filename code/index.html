@@ -13,6 +13,7 @@
 		<!--<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>-->
 		<!--Flickity local resources-->
 		<!--<link rel="stylesheet" href="stylesheets/flickity.min.css">-->
+		<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
 		<link rel="stylesheet" href="index.css">
 		<!--javascript-->
 		<script src="js/jquery.min.js"></script>
@@ -48,8 +49,6 @@
 		</header>
 
 
-
-
 		<!--begin about-->
 		<a name="about-anchor"></a>
 		<div class="secondary-bg">
@@ -61,7 +60,7 @@
 				<div class="icons">
 					<i class="fa fa-github-square" aria-hidden="true"></i>
 					<i class="fa fa-linkedin-square" aria-hidden="true"></i>
-					<i class="fa fa-file-text" aria-hidden="true"></i>
+					<!--<i class="fa fa-file-text" aria-hidden="true"></i>-->
 				</div>
 				<div class="row">
 					<div class="about-column">
@@ -73,6 +72,7 @@
 				</div>
 			</article>	
 		</div>
+
 
 		<!--validation confirmation-->
 		<?php
@@ -89,11 +89,12 @@
 			// echo ("Validation result is: $validation");
 		?>
 
+
 		<!--begin portfolio-->
 		<a name="portfolio-anchor"></a>
 		<div class="base-bg">
 			<article class="type-system-geometric" id="carousel">
-				<h1>Portfolio</h1>
+				<h2>Portfolio</h2>
 				<div class="main-carousel carousel" data-flickity='{ 
 						"wrapAround": true, 
 						"imagesLoaded": true, 
@@ -222,19 +223,25 @@
 		<a name="skills-anchor"></a>
 		<div class="secondary-bg">
 			<article class="type-system-geometric" id="skills">
-				<h1>Skills</h1>
+				<h2>Skills</h2>
 				<div class="row">
 					<div class="skills-column">
-						<p><img src="images/checkmarkLightGreen.png" alt="checkbox" class="checkbox">&nbsp;PHP</p>
-						<p><img src="images/checkmarkLightGreen.png" alt="checkbox" class="checkbox">&nbsp;SQL</p>
-						<p><img src="images/checkmarkLightGreen.png" alt="checkbox" class="checkbox">&nbsp;Linux</p>
-						<p><img src="images/checkmarkLightGreen.png" alt="checkbox" class="checkbox">&nbsp;Back End</p>
+						<i class="fa fa-check-square-o" aria-hidden="true"><span class="fa-text">&nbsp;PHP</span></i>
+						<br>
+						<i class="fa fa-check-square-o" aria-hidden="true"><span class="fa-text">&nbsp;SQL</span></i>
+						<br>
+						<i class="fa fa-check-square-o" aria-hidden="true"><span class="fa-text">&nbsp;Linux</span></i>
+						<br>
+						<i class="fa fa-check-square-o" aria-hidden="true"><span class="fa-text">&nbsp;Back End</span></i>
 					</div>
 					<div class="skills-column">
-						<p><img src="images/checkmarkLightGreen.png" alt="checkbox" class="checkbox">&nbsp;JavaScript</p>
-						<p><img src="images/checkmarkLightGreen.png" alt="checkbox" class="checkbox">&nbsp;C#</p>
-						<p><img src="images/checkmarkLightGreen.png" alt="checkbox" class="checkbox">&nbsp;Java</p>
-						<p><img src="images/checkmarkLightGreen.png" alt="checkbox" class="checkbox">&nbsp;Front End</p>
+						<i class="fa fa-check-square-o" aria-hidden="true"><span class="fa-text">&nbsp;JavaScript</span></i>
+						<br>
+						<i class="fa fa-check-square-o" aria-hidden="true"><span class="fa-text">&nbsp;ASP.NET</span></i>
+						<br>
+						<i class="fa fa-check-square-o" aria-hidden="true"><span class="fa-text">&nbsp;Java</span></i>
+						<br>
+						<i class="fa fa-check-square-o" aria-hidden="true"><span class="fa-text">&nbsp;Front-End</span></i>
 					</div>
 				</div>
 			</article>
@@ -246,7 +253,7 @@
 		<div class="base-bg">
 			<article class="type-system-geometric" id="contact">
 				<div class="row">
-					<h1>Contact</h1>
+					<h2>Contact</h2>
 				</div>
 				<div class="row-contact">
 					<form action="contact_me.php" method="post" name="contact_form" id="contact_form" onSubmit="submitForm(this)" enctype=”multipart/form-data”>

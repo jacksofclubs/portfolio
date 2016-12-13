@@ -80,8 +80,9 @@ html {
 }
 .secondary-bg {
     background-color: $secondary-background-color;
-    .type-system-geometric p, .type-system-geometric h1 {
-        color: #fff;
+    .type-system-geometric p, .type-system-geometric h1, .type-system-geometric h2 {
+        color: $light-gray;
+        font-family: 'Lato', sans-serif;
     }
 }
 .title {
@@ -100,7 +101,7 @@ html {
 .divider {
     max-width: 40%;
     border-top: solid 4px;
-    border-color: #fff;
+    border-color: $light-gray;
     margin-left: 30%;
     margin-right: 30%;
 }
@@ -126,7 +127,12 @@ html, body {
     padding: 0;
 }
 h1 {
-    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    text-transform: uppercase;
 }
 #about {
     margin-top: 35px;
@@ -160,6 +166,16 @@ h1 {
 .modal-footer {
     text-align: center;
     margin: 20px auto;
+}
+.skills-column {
+    .fa {
+        font-size: 30px;
+        color: lightgreen;
+        line-height: 200%;
+    }
+    .fa-text {
+        color: $light-gray;
+    }
 }
 
 /* Custom Responsive CSS
