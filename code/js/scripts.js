@@ -19,21 +19,35 @@ $(window).resize(function() {
 });
 
 $(document).ready(function() {
-  var menuToggle = $("#js-mobile-menu").unbind();
-  $("#js-navigation-menu").removeClass("show");
 
+  var menuToggle = $("#js-mobile-menu").unbind();
+  var menuOptions = $("#js-navigation-menu");
+  menuOptions.removeClass("show");
+
+  // When the menu icon is clicked, toggle show/hide
   menuToggle.on("click", function(e) {
     e.preventDefault();
-    $("#js-navigation-menu").slideToggle(function(){
-      if($("#js-navigation-menu").is(":hidden")) {
-        $("#js-navigation-menu").removeAttr("style");
+      menuOptions.slideToggle(function() {
+        if(menuOptions.is(":hidden")) {
+        menuOptions.removeAttr("style");
       }
     });
   });
 
+  // When a navmenu option is clicked during mobile view, hide the navmenu options
+  menuOptions.on("click", function(e) {
+    var windowWidth = $(document).width();
+    if(menuOptions.is(":visible") && windowWidth < 900) {
+      menuOptions.slideToggle(function() {
+        menuOptions.removeAttr("style");
+      });
+    }
+  });
+  // End Navigation
+
   // Begin Modal
   $(function() {
-    $("#modal-1").on("change", function() {
+    $(".modal-state").on("change", function() {
       if ($(this).is(":checked")) {
         $("body").addClass("modal-open");
       } else {
@@ -48,23 +62,60 @@ $(document).ready(function() {
     $(".modal-inner").on("click", function(e) {
       e.stopPropagation();
     });
+
+    $("#modal-8").on("change", function() {
+      if ($(this).is(":checked")) {
+        $("body").addClass("modal-open");
+        setTimeout(function() {
+          $("#modal-8").prop("checked",false);
+        }, 3000);        
+      } else {
+        $("body").removeClass("modal-open");
+      }
+    });
+
+    // $(function() {
+    //   if ($(validation).is("true")) {
+    //     // do this if true
+    //     // document.getElementById("modal-8").checked = true;
+    //   } else if ($(validation).is("false")) {
+    //     // do this if false
+    //     // document.getElementById("modal-8").checked = true;
+    //   } else {
+    //     // do nothing
+    //   }
+    // });
+
+    
+  
   });
+
+  
+
+
   // End Modal
 
-}); 
-// End Navigation
+  // Begin Flickity
+  var elem = document.querySelector('.main-carousel');
+  var flkty = new Flickity( elem, {
+    // options
+    cellAlign: 'left',
+    contain: true
+  });
 
-// Begin Flickity
-var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity( elem, {
-  // options
-  cellAlign: 'left',
-  contain: true
-});
+  // element argument can be a selector string
+  //   for an individual element
+  var flkty = new Flickity( '.main-carousel', {
+    // options
+  });
+  // End Flickity
 
-// element argument can be a selector string
-//   for an individual element
-var flkty = new Flickity( '.main-carousel', {
-  // options
 });
-// End Flickity
+// End document.ready
+
+// Called when form submitted
+function submitForm(formobj) {
+    formobj.btnSubmit.value = "Processing";
+    formobj.btnSubmit.disabled = true;
+    return true;
+}

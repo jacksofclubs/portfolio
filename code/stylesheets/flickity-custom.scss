@@ -8,13 +8,35 @@ body { font-family: sans-serif; }
   background: #EEE;
 }
 
-.carousel img {
+.carousel-cell img {
   display: block;
-  height: 200px;
+  // height: 400px;
 }
 
-@media screen and ( min-width: 768px ) {
-  .carousel img {
-    height: 400px;
-  }
+// @media screen and ( min-width: $navbar-limit ) {
+//   .carousel-cell {
+//     height: 400px;
+//     width: 554px;
+//   }
+// }
+// @media screen and (max-width: $navbar-limit) {
+//     .carousel-cell {
+//     height: 200px;
+//     width: 277px;
+//   }
+// }
+.flickity-prev-next-button {
+  // width: 30px;
+  // height: 30px;
+  border-radius: 5px;
+  background: #333;
 }
+.flickity-prev-next-button:hover {
+  background: $secondary-background-color;
+}
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+// .carousel-cell {
+//   width: 20px;
+// }

@@ -1,24 +1,28 @@
 /*
-Error: Undefined variable: "$secondary-background-color".
-        on line 35 of final/code/stylesheets/flickity-custom.scss
+Error: Undefined mixin 'media'.
+        on line 17 of final/code/stylesheets/hover-tile-custom.scss, in `media'
+        from line 17 of final/code/stylesheets/hover-tile-custom.scss
 
-30:   // height: 30px;
-31:   border-radius: 5px;
-32:   background: #333;
-33: }
-34: .flickity-prev-next-button:hover {
-35:   background: $secondary-background-color;
-36: }
-37: .flickity-prev-next-button .arrow {
-38:   fill: white;
-39: }
-40: // .carousel-cell {
+12:   // border: 1px solid $base-border-color;
+13:   // cursor: pointer;
+14:   height: $hover-tile-height;
+15:   // margin-bottom: $base-line-height;
+16: 
+17:   @include media($medium-screen) {
+18:     // width: 46%;
+19:     
+20:     // $hover-tile-height: 200px;
+21:     // height: $hover-tile-height; 
+22:   }
 
 Backtrace:
-final/code/stylesheets/flickity-custom.scss:35
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+final/code/stylesheets/hover-tile-custom.scss:17:in `media'
+final/code/stylesheets/hover-tile-custom.scss:17
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `block in with_mixin'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `with_mixin'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
@@ -65,4 +69,4 @@ final/code/stylesheets/flickity-custom.scss:35
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$secondary-background-color\".\A         on line 35 of final/code/stylesheets/flickity-custom.scss\A \A 30:   // height: 30px;\A 31:   border-radius: 5px;\A 32:   background: #333;\A 33: }\A 34: .flickity-prev-next-button:hover {\A 35:   background: $secondary-background-color;\A 36: }\A 37: .flickity-prev-next-button .arrow {\A 38:   fill: white;\A 39: }\A 40: // .carousel-cell {"; }
+  content: "Error: Undefined mixin 'media'.\A         on line 17 of final/code/stylesheets/hover-tile-custom.scss, in `media'\A         from line 17 of final/code/stylesheets/hover-tile-custom.scss\A \A 12:   // border: 1px solid $base-border-color;\A 13:   // cursor: pointer;\A 14:   height: $hover-tile-height;\A 15:   // margin-bottom: $base-line-height;\A 16: \A 17:   @include media($medium-screen) {\A 18:     // width: 46%;\A 19:     \A 20:     // $hover-tile-height: 200px;\A 21:     // height: $hover-tile-height; \A 22:   }"; }

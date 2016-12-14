@@ -2,6 +2,8 @@
 /*----------------------------------------
 Imports
 ----------------------------------------*/
+@import url(stylesheets/flickity.min.css);
+@import url(font-awesome-4.7.0/css/font-awesome.min.css);
 html {
   box-sizing: border-box;
 }
@@ -524,67 +526,6 @@ header.navigation .search-bar form button[type=submit] img {
   }
 }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.card {
-  background-color: #f7f7f7;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  box-shadow: 0 2px 4px #e6e6e6;
-  cursor: pointer;
-  flex-basis: 15em;
-  flex-grow: 1;
-  margin: 0 1em 1.5em 1em;
-  position: relative;
-  transition: all 0.2s ease-in-out;
-}
-.card .card-image {
-  background-color: #F8F2B4;
-  height: 150px;
-  max-height: 150px;
-  overflow: hidden;
-}
-.card .card-image img {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  opacity: 1;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
-}
-.card .card-header {
-  background-color: #f7f7f7;
-  border-bottom: 1px solid #ddd;
-  border-radius: 3px 3px 0 0;
-  font-weight: bold;
-  line-height: 1.5em;
-  padding: 0.5em 0.75em;
-  transition: all 0.2s ease-in-out;
-}
-.card .card-copy {
-  font-size: 0.9em;
-  line-height: 1.5em;
-  padding: 0.75em 0.75em;
-}
-.card .card-copy p {
-  margin: 0 0 0.75em;
-}
-.card:focus, .card:hover {
-  cursor: pointer;
-}
-.card:focus img, .card:hover img {
-  opacity: 0.7;
-}
-.card:active {
-  background-color: #f7f7f7;
-}
-.card:active .card-header {
-  background-color: #f7f7f7;
-}
-
 .footer-2 {
   background: #1c3653;
   display: inline-block;
@@ -670,121 +611,6 @@ header.navigation .search-bar form button[type=submit] img {
   opacity: 1;
 }
 
-article.type-system-geometric {
-  font-family: "Questrial", sans-serif;
-  text-align: left;
-}
-article.type-system-geometric::after {
-  clear: both;
-  content: "";
-  display: block;
-}
-article.type-system-geometric h1, article.type-system-geometric h2, article.type-system-geometric h3, article.type-system-geometric p {
-  margin: 0;
-}
-article.type-system-geometric hr {
-  border-bottom: 1px solid #ddd;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  margin: 1.5em 0;
-}
-article.type-system-geometric p {
-  color: #333;
-  line-height: 1.5;
-}
-article.type-system-geometric a {
-  color: #1565c0;
-  text-decoration: none;
-}
-article.type-system-geometric .type {
-  border-bottom: 1px solid;
-  display: inline-block;
-  font-family: "Questrial", sans-serif;
-  font-size: 0.7em;
-  font-weight: 800;
-  margin-bottom: 2em;
-  padding: 0.3em 0;
-  text-align: left;
-  text-transform: uppercase;
-}
-article.type-system-geometric h1 {
-  font-family: "Sanchez", serif;
-  font-size: 1.8em;
-  font-weight: 700;
-  margin-bottom: 0.5em;
-}
-@media screen and (min-width: 600px) {
-  article.type-system-geometric h1 {
-    font-size: 2.6em;
-  }
-}
-article.type-system-geometric h2 {
-  font-family: "Sanchez", serif;
-  font-size: 1.2em;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 1.4em;
-  margin-bottom: 1.1em;
-}
-@media screen and (min-width: 600px) {
-  article.type-system-geometric h2 {
-    font-size: 1.3em;
-  }
-}
-article.type-system-geometric code {
-  background: #F7F7F7;
-  border-radius: 4.5px;
-  border: 1px solid #E0E0E0;
-  font-size: 0.7em;
-  font-style: normal;
-  padding: 0.1em 0.4em;
-  white-space: nowrap;
-}
-article.type-system-geometric h3 {
-  font-family: "Sanchez", serif;
-  font-size: 1.4em;
-  font-weight: 400;
-  line-height: 1.3em;
-  margin-bottom: 0.4em;
-}
-article.type-system-geometric p.date {
-  color: rgba(51, 51, 51, 0.4);
-  font-family: "Sanchez", serif;
-  font-size: 0.9em;
-  font-style: italic;
-  margin-bottom: 0.3em;
-}
-article.type-system-geometric p {
-  font-family: "Questrial", sans-serif;
-  font-size: 1.05em;
-  line-height: 1.5em;
-  margin-bottom: 1.5em;
-}
-article.type-system-geometric a.read-more {
-  display: inline-block;
-  font-family: "Questrial", sans-serif;
-  font-size: 0.8em;
-  font-weight: 700;
-  margin-left: 0.2em;
-  position: relative;
-  text-transform: uppercase;
-}
-article.type-system-geometric a.read-more span {
-  font-family: "Questrial", sans-serif;
-  font-size: 1.5em;
-  font-style: normal;
-  position: absolute;
-  right: -12px;
-  top: -1px;
-}
-article.type-system-geometric hr {
-  width: 3em;
-}
-article.type-system-geometric p.author {
-  font-family: "Questrial", sans-serif;
-}
-
 /* external css: flickity.css */
 * {
   box-sizing: border-box;
@@ -798,16 +624,23 @@ body {
   background: #EEE;
 }
 
-.carousel img {
+.carousel-cell img {
   display: block;
-  height: 200px;
 }
 
-@media screen and (min-width: 768px) {
-  .carousel img {
-    height: 400px;
-  }
+.flickity-prev-next-button {
+  border-radius: 5px;
+  background: #333;
 }
+
+.flickity-prev-next-button:hover {
+  background: #025167;
+}
+
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+
 .hover-tile-outer {
   background-position: top;
   cursor: pointer;
@@ -816,7 +649,7 @@ body {
 }
 @media screen and (min-width: 600px) {
   .hover-tile-outer {
-    width: 46%;
+    width: 40%;
   }
 }
 .hover-tile-outer .hover-tile-container {
@@ -831,7 +664,7 @@ body {
   color: white;
   height: inherit;
   overflow: hidden;
-  padding: 0px;
+  padding: 1.5em;
   transition: all 0.2s ease-in-out;
 }
 .hover-tile-outer .hover-tile-hidden {
@@ -840,10 +673,22 @@ body {
 .hover-tile-outer .hover-tile-hidden p {
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.5;
-  padding: 0% 5% 5% 5%;
 }
 .hover-tile-outer .hover-tile-hidden h4 {
   margin: 0 0 0.5em 0;
+}
+
+.hover-tile-outer {
+  background-size: cover;
+  height: 400px;
+}
+.hover-tile-outer .hover-tile {
+  padding: 0px;
+}
+.hover-tile-outer .hover-tile-hidden p {
+  padding: 0% 5% 0% 5%;
+}
+.hover-tile-outer .hover-tile-hidden h4 {
   padding: 5% 5% 0% 5%;
 }
 
@@ -1034,25 +879,12 @@ Custom Styles
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%;
-  margin-left: 8.5298%;
+  width: 48.82117%;
 }
 .skills-column:last-child {
   margin-right: 0;
 }
 
-@media screen and (max-width: 768px) {
-  .row-contact, .about-column, .skills-column {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    margin-left: 0%;
-  }
-  .row-contact:last-child, .about-column:last-child, .skills-column:last-child {
-    margin-right: 0;
-  }
-}
 .about-column p {
   text-align: justify;
 }
@@ -1063,7 +895,7 @@ html {
 
 .base-bg, .secondary-bg {
   width: 100%;
-  padding: 40px 0px 40px 0px;
+  padding: 60px 0px;
 }
 
 .base-bg {
@@ -1071,10 +903,44 @@ html {
 }
 
 .secondary-bg {
-  background-color: #18bc9c;
+  background-color: #025167;
 }
-.secondary-bg .type-system-geometric p, .secondary-bg .type-system-geometric h1 {
+.secondary-bg .type-system-geometric p, .secondary-bg .type-system-geometric h1, .secondary-bg .type-system-geometric h2 {
+  color: #ddd;
+  font-family: 'Lato', sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 60px;
+  font-size: 4.75em;
+  margin-bottom: auto;
+}
+
+.subtitle {
+  text-align: center;
   color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.75em;
+  text-transform: capitalize;
+}
+
+.divider {
+  max-width: 40%;
+  border-top: solid 4px;
+  border-color: #ddd;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.icons {
+  text-align: center;
+  font-size: 50px;
+}
+
+.footer-2 {
+  background: #333;
 }
 
 .checkbox {
@@ -1093,11 +959,17 @@ html, body {
 }
 
 h1 {
-  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em;
+  text-transform: uppercase;
 }
 
 #about {
-  margin-top: 35px;
+  margin-top: 50px;
 }
 
 .navigation {
@@ -1109,6 +981,159 @@ h1 {
 .modal .modal-inner {
   width: 80%;
   max-width: 1200px;
+  max-height: 95%;
+  position: relative;
+}
+
+.modal-img {
+  display: block;
+  margin: 30px auto;
+}
+
+.modal .modal-inner h1 {
+  font-size: 28pt;
+  text-align: center;
+}
+
+.modal-intro, .modal-content {
+  text-align: justify;
+}
+
+.modal-footer {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.skills-column {
+  text-align: center;
+}
+.skills-column .fa {
+  font-size: 30px;
+  color: lightgreen;
+  line-height: 200%;
+}
+.skills-column .fa-text {
+  color: #ddd;
+}
+.skills-column .skills-subcolumn {
+  display: inline-block;
+  text-align: left;
+}
+
+.modal .modal-inner h1 {
+  text-transform: none;
+}
+
+.footer-2 .footer-social .fa-github-square::before,
+.footer-2 .footer-social .fa-linkedin-square::before {
+  font-size: 40px;
+}
+
+.icons a {
+  color: #ddd;
+}
+.icons a :hover {
+  color: #333;
+}
+
+.modal .modal-trigger {
+  padding-left: 5%;
+}
+
+.modal-trigger .fa {
+  font-size: 150px;
+  text-align: center;
+  width: 100%;
+}
+
+.modal-inner .project-link {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.modal .modal-inner {
+  width: 50%;
+}
+
+/* Custom Responsive CSS
+-------------------------------------------------- */
+@media all and (min-width: 768px) {
+  .hover-tile-outer, .carousel-cell {
+    height: 400px;
+    width: 554px;
+  }
+}
+@media all and (max-width: 768px) {
+  .row-contact, .about-column, .skills-column {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-left: 0%;
+  }
+  .row-contact:last-child, .about-column:last-child, .skills-column:last-child {
+    margin-right: 0;
+  }
+
+  .hover-tile-outer, .carousel-cell {
+    height: 200px;
+    width: 277px;
+  }
+
+  .skills-column {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .hover-tile-outer .hover-tile-hidden p {
+    display: none;
+  }
+
+  .modal-trigger .fa {
+    font-size: 85px;
+  }
+
+  .hover-tile h4 {
+    font-size: 18px;
+  }
+
+  .modal .modal-inner h1 {
+    font-size: 20px;
+    margin-top: 24px;
+  }
+
+  .modal-footer {
+    text-align: left;
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 600px) {
+  .flickity-prev-next-button {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+  }
+
+  .title {
+    font-size: 3.00em;
+  }
+
+  h2 {
+    font-size: 2.0em;
+  }
+
+  .subtitle {
+    font-size: 1.5em;
+  }
+
+  .skills-column .fa {
+    font-size: 25px;
+    line-height: 190%;
+  }
+
+  .modal .modal-inner {
+    width: 95%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,6 +1,7 @@
 // Breakpoints
 $medium-screen: 600px;
 $large-screen: 900px;
+$navbar-limit: 768px;
 
 // Typography
 $base-font-family: $font-stack-system;
@@ -36,7 +37,9 @@ $base-border: 1px solid $base-border-color;
 // Background Colors
 $base-background-color: #fff;
 // $secondary-background-color: tint($base-border-color, 75%);
-$secondary-background-color: #18bc9c;
+$secondary-background-color: #025167;
+// original green: #18bc9c
+// blue color: #025167
 
 // Forms
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
