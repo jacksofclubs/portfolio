@@ -47,7 +47,7 @@ $(document).ready(function() {
 
   // Begin Modal
   $(function() {
-    $("#modal-1").on("change", function() {
+    $(".modal-state").on("change", function() {
       if ($(this).is(":checked")) {
         $("body").addClass("modal-open");
       } else {
@@ -62,7 +62,37 @@ $(document).ready(function() {
     $(".modal-inner").on("click", function(e) {
       e.stopPropagation();
     });
+
+    $("#modal-8").on("change", function() {
+      if ($(this).is(":checked")) {
+        $("body").addClass("modal-open");
+        setTimeout(function() {
+          $("#modal-8").prop("checked",false);
+        }, 3000);        
+      } else {
+        $("body").removeClass("modal-open");
+      }
+    });
+
+    // $(function() {
+    //   if ($(validation).is("true")) {
+    //     // do this if true
+    //     // document.getElementById("modal-8").checked = true;
+    //   } else if ($(validation).is("false")) {
+    //     // do this if false
+    //     // document.getElementById("modal-8").checked = true;
+    //   } else {
+    //     // do nothing
+    //   }
+    // });
+
+    
+  
   });
+
+  
+
+
   // End Modal
 
   // Begin Flickity

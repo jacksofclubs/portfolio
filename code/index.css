@@ -634,7 +634,7 @@ body {
 }
 
 .flickity-prev-next-button:hover {
-  background: #18bc9c;
+  background: #025167;
 }
 
 .flickity-prev-next-button .arrow {
@@ -686,7 +686,7 @@ body {
   padding: 0px;
 }
 .hover-tile-outer .hover-tile-hidden p {
-  padding: 0% 5% 5% 5%;
+  padding: 0% 5% 0% 5%;
 }
 .hover-tile-outer .hover-tile-hidden h4 {
   padding: 5% 5% 0% 5%;
@@ -879,8 +879,7 @@ Custom Styles
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%;
-  margin-left: 8.5298%;
+  width: 48.82117%;
 }
 .skills-column:last-child {
   margin-right: 0;
@@ -904,17 +903,18 @@ html {
 }
 
 .secondary-bg {
-  background-color: #18bc9c;
+  background-color: #025167;
 }
-.secondary-bg .type-system-geometric p, .secondary-bg .type-system-geometric h1 {
-  color: #fff;
+.secondary-bg .type-system-geometric p, .secondary-bg .type-system-geometric h1, .secondary-bg .type-system-geometric h2 {
+  color: #ddd;
+  font-family: 'Lato', sans-serif;
 }
 
 .title {
   text-align: center;
   font-size: 60px;
-  padding-bottom: 0px;
   font-size: 4.75em;
+  margin-bottom: auto;
 }
 
 .subtitle {
@@ -923,12 +923,13 @@ html {
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 1.75em;
+  text-transform: capitalize;
 }
 
 .divider {
   max-width: 40%;
   border-top: solid 4px;
-  border-color: #fff;
+  border-color: #ddd;
   margin-left: 30%;
   margin-right: 30%;
 }
@@ -936,6 +937,10 @@ html {
 .icons {
   text-align: center;
   font-size: 50px;
+}
+
+.footer-2 {
+  background: #333;
 }
 
 .checkbox {
@@ -954,11 +959,17 @@ html, body {
 }
 
 h1 {
-  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em;
+  text-transform: uppercase;
 }
 
 #about {
-  margin-top: 35px;
+  margin-top: 50px;
 }
 
 .navigation {
@@ -993,6 +1004,53 @@ h1 {
   margin: 20px auto;
 }
 
+.skills-column {
+  text-align: center;
+}
+.skills-column .fa {
+  font-size: 30px;
+  color: lightgreen;
+  line-height: 200%;
+}
+.skills-column .fa-text {
+  color: #ddd;
+}
+.skills-column .skills-subcolumn {
+  display: inline-block;
+  text-align: left;
+}
+
+.modal .modal-inner h1 {
+  text-transform: none;
+}
+
+.footer-2 .footer-social .fa-github-square::before,
+.footer-2 .footer-social .fa-linkedin-square::before {
+  font-size: 40px;
+}
+
+.icons a {
+  color: #ddd;
+}
+.icons a :hover {
+  color: #333;
+}
+
+.modal .modal-trigger {
+  padding-left: 5%;
+}
+
+.modal-trigger .fa {
+  font-size: 150px;
+  text-align: center;
+  width: 100%;
+}
+
+.modal-inner .project-link {
+  text-align: center;
+  margin: 20px 0px;
+}
+
 /* Custom Responsive CSS
 -------------------------------------------------- */
 @media all and (min-width: 768px) {
@@ -1017,12 +1075,56 @@ h1 {
     height: 200px;
     width: 277px;
   }
+
+  .skills-column {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .hover-tile-outer .hover-tile-hidden p {
+    display: none;
+  }
+
+  .modal-trigger .fa {
+    font-size: 85px;
+  }
+
+  .hover-tile h4 {
+    font-size: 18px;
+  }
+
+  .modal .modal-inner h1 {
+    font-size: 20px;
+    margin-top: 24px;
+  }
+
+  .modal-footer {
+    text-align: left;
+    font-size: 14px;
+  }
 }
 @media all and (max-width: 600px) {
   .flickity-prev-next-button {
     width: 30px;
     height: 30px;
     padding: 0;
+  }
+
+  .title {
+    font-size: 3.00em;
+  }
+
+  h2 {
+    font-size: 2.0em;
+  }
+
+  .subtitle {
+    font-size: 1.5em;
+  }
+
+  .skills-column .fa {
+    font-size: 25px;
+    line-height: 190%;
   }
 }
 
