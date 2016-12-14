@@ -200,17 +200,29 @@ h2 {
 .icons {
     .fa-github-square::before,
     .fa-linkedin-square::before {
+<<<<<<< HEAD
     }
     a {
         color: #ddd;
     }
     a :hover {
         color: $dark-gray;
+=======
+        // background: $dark-gray;
+        // color: $dark-gray;
+    }
+    a {
+        color: $dark-gray;
+    }
+    a :hover {
+        color: $light-gray;
+>>>>>>> f8626e62c4c96d4e5863be9212b8502adddf517b
     }
 }
 .modal .modal-trigger {
     padding-left: 5%;
 }
+<<<<<<< HEAD
 .modal-trigger {
     .fa {
         font-size: 150px;
@@ -224,6 +236,8 @@ h2 {
         margin: 20px 0px;
     }
 }
+=======
+>>>>>>> f8626e62c4c96d4e5863be9212b8502adddf517b
 
 /* Custom Responsive CSS
 -------------------------------------------------- */
@@ -261,6 +275,7 @@ h2 {
         padding-left: 20px;
     }
     .hover-tile-outer .hover-tile-hidden p {
+<<<<<<< HEAD
         display: none;
     }
     .modal-trigger {
@@ -281,6 +296,10 @@ h2 {
         text-align: left;
         font-size: 14px;
     }
+=======
+        visibility: hidden;
+    }    
+>>>>>>> f8626e62c4c96d4e5863be9212b8502adddf517b
 }
 
 // Phone size screen
