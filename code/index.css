@@ -1030,24 +1030,16 @@ h2 {
 }
 
 .icons a {
-<<<<<<< HEAD
   color: #ddd;
 }
 .icons a :hover {
   color: #333;
-=======
-  color: #333;
-}
-.icons a :hover {
-  color: #ddd;
->>>>>>> f8626e62c4c96d4e5863be9212b8502adddf517b
 }
 
 .modal .modal-trigger {
   padding-left: 5%;
 }
 
-<<<<<<< HEAD
 .modal-trigger .fa {
   font-size: 150px;
   text-align: center;
@@ -1059,8 +1051,6 @@ h2 {
   margin: 20px 0px;
 }
 
-=======
->>>>>>> f8626e62c4c96d4e5863be9212b8502adddf517b
 /* Custom Responsive CSS
 -------------------------------------------------- */
 @media all and (min-width: 768px) {
@@ -1092,7 +1082,6 @@ h2 {
   }
 
   .hover-tile-outer .hover-tile-hidden p {
-<<<<<<< HEAD
     display: none;
   }
 
@@ -1112,9 +1101,6 @@ h2 {
   .modal-footer {
     text-align: left;
     font-size: 14px;
-=======
-    visibility: hidden;
->>>>>>> f8626e62c4c96d4e5863be9212b8502adddf517b
   }
 }
 @media all and (max-width: 600px) {
