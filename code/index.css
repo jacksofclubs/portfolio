@@ -1051,6 +1051,10 @@ h2 {
   margin: 20px 0px;
 }
 
+.modal .modal-inner {
+  width: 50%;
+}
+
 /* Custom Responsive CSS
 -------------------------------------------------- */
 @media all and (min-width: 768px) {
@@ -1125,6 +1129,10 @@ h2 {
   .skills-column .fa {
     font-size: 25px;
     line-height: 190%;
+  }
+
+  .modal .modal-inner {
+    width: 95%;
   }
 }
 

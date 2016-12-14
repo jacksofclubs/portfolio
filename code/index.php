@@ -28,6 +28,12 @@
     <link rel="icon" href="images/favicon.ico">
 </head>
 
+<?php
+    $validation = "";
+    if (isset($_GET['validation'])) {
+        $validation = $_GET['validation'];
+    }
+?>
 
 <!-- begin body -->
 
@@ -177,7 +183,7 @@
                         </div>
                     </div>
                     <!--Project 6-->
-                    <div class="hover-tile-outer carousel-cell">
+                    <!--<div class="hover-tile-outer carousel-cell">
                         <div class="hover-tile-container">
                             <div class="hover-tile hover-tile-visible"><img src="images/circus.png" alt=""></div>
                             <div class="hover-tile hover-tile-hidden">
@@ -190,7 +196,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <!--Project 7-->
                     <div class="hover-tile-outer carousel-cell">
                         <div class="hover-tile-container">
@@ -377,7 +383,7 @@
             </div>
         </div>
         <!--Modal 6-->
-        <div class="modal">
+        <!--<div class="modal">
             <input class="modal-state" id="modal-6" type="checkbox" />
             <div class="modal-fade-screen">
                 <div class="modal-inner">
@@ -391,7 +397,7 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </div>-->
         <!--Modal 7-->
         <div class="modal">
             <input class="modal-state" id="modal-7" type="checkbox" />
@@ -400,7 +406,7 @@
                     <div class="modal-close" for="modal-7"></div>
                     <h1>Baby Toys eCommerce Site</h1>
                     <p class="modal-intro">The Baby Toys eCommerce Site is a mock-up online store that allows you to browse products, check recall information, and contact the store. </p>
-                    <img class="modal-img" src="#" alt="">
+                    <img class="modal-img" src="images/baby-toys.PNG" alt="">
                     <form class="project-link" action="http://kevinjackswi.com/projects/baby-toys/">
                         <input type="submit" class="btn btn-default" name="btnSubmit" value="View Project Website">
                     </form>           
@@ -411,6 +417,28 @@
                 </div>
             </div>
         </div>
+        <!--Modal 8-->
+        <div class="modal">
+            <input class="modal-state" id="modal-8" type="checkbox" />
+            <div class="modal-fade-screen">
+                <div class="modal-inner">
+                    <div class="modal-close modal-confirmation" for="modal-8"></div>
+                    <?php
+                        if ($validation == "true") {
+                            echo "<h1>Email has been sent!</h1>";
+                        } elseif ($validation == "false") {
+                            echo "<h1>Oops, something went wrong!</h1>";
+                        }
+                    ?>
+                    <!--<h1>Email has been sent! Validation = <?=$validation?></h1>-->
+                    <!--<p class="modal-intro">Data has been processed.</p>          
+                    <p class="modal-content">Data has been processed.</p>-->
+                    <!--<p class="modal-footer">
+                        Footer Material
+                    </p>-->
+                </div>
+            </div>
+        </div>           
         <!--End Modal Content-->
 
 
@@ -441,35 +469,16 @@
                 </ul>
             </div>
         </footer>
+
+
         <!--validation confirmation-->
         <?php
-            $validation = "";
-            if (isset($_GET['validation'])) {
-                $validation = $_GET['validation'];
+            if($validation == "true" || $validation == "false") {
                 echo "<script> $('#modal-8').prop('checked',true); </script>";
-                // <script> $("#modal-8").prop("checked",true); </script>
             }
             // echo ("Validation result is: $validation");
-        ?>        
-        <!--<script> $("#modal-8").prop("checked",true); </script>-->
+        ?>
 
-        <!--Modal 8-->
-        <div class="modal">
-            <input class="modal-state" id="modal-8" type="checkbox" />
-            <div class="modal-fade-screen">
-                <div class="modal-inner">
-                    <div class="modal-close" for="modal-8"></div>
-                    <h1>Email has been sent! Validation = <?=$validation?></h1>
-                    <!--<p class="modal-intro">Data has been processed.</p>          
-                    <p class="modal-content">Data has been processed.</p>-->
-                    <!--<p class="modal-footer">
-                        Footer Material
-                    </p>-->
-                </div>
-            </div>
-        </div>        
-        
-     
 </body>
 
 </html>
