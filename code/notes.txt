@@ -1,7 +1,0 @@
-sass --watch styles.scss:styles.css
-sass --watch code --style expanded
-
-
-Final polishing before release
-==============================
-- WC3 compliant

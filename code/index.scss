@@ -229,7 +229,7 @@ h2 {
     }
 }
 
-// Navbar and carousel resizing for large small screens
+// Navbar and carousel resizing for large & small screens
 @media all and (max-width: $navbar-limit) {
     .row-contact, .about-column, .skills-column {
         @include span-columns(12 of 12);
