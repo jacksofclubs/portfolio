@@ -48,21 +48,11 @@ Custom Styles
 }
 .about-column {
     @include span-columns(6 of 12);
-    // @include shift(1 of 12);
 }
 .skills-column {
     @include span-columns(6 of 12);
-    // @include shift(1 of 12);
 }
 
-// Set column structure for tablet size
-// @media screen and (max-width: $navbar-limit) {
-//     .row-contact, .about-column, .skills-column {
-//         @include span-columns(12 of 12);
-//         @include shift(0 of 12);
-//     }
-// }
-// Text Styles
 .about-column p {
     text-align: justify;
 }
@@ -109,18 +99,15 @@ html {
 .icons {
     text-align: center;
     font-size: 50px;
-    // color: #fff;
 }
 .footer-2 {
     background: $dark-gray;
 }
 
-// Image styles
 .checkbox {
   @include size(30px);
 }
 
-// Form Styles
 textarea {
     height: 150px;
     min-height: 70px;
@@ -148,11 +135,9 @@ h2 {
 }
 .modal .modal-inner {
     width: 80%;
-    // height: 95%;
     max-width: 1200px;
     max-height: 95%;
     position: relative;
-    // margin-top: -100px;
 }
 .modal-img {
     display: block;
@@ -161,10 +146,8 @@ h2 {
 .modal .modal-inner h1 {
     font-size: 28pt;
     text-align: center;
-    // padding: 20px;
 }
 .modal-intro, .modal-content {
-    // width: 80%;
     text-align: justify;
 }
 .modal-footer {
@@ -198,9 +181,6 @@ h2 {
     }
 }
 .icons {
-    // .fa-github-square::before,
-    // .fa-linkedin-square::before {
-    // }
     a {
         color: #ddd;
     }
@@ -232,14 +212,14 @@ h2 {
 -------------------------------------------------- */
 
 // Large screen size and up
-@media all and (min-width: $large-screen) {
+// @media all and (min-width: $large-screen) {
 
-}
+// }
 
 // Tablet size screen
-@media all and (min-width: $medium-screen) and (max-width: $large-screen) {
+// @media all and (min-width: $medium-screen) and (max-width: $large-screen) {
 
-}
+// }
 
 // Navbar and carousel resizing for large screens
 @media all and (min-width: $navbar-limit) {

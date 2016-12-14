@@ -5,7 +5,3 @@ sass --watch code --style expanded
 Final polishing before release
 ==============================
 - WC3 compliant
-- no javascript errors
-- alt tags filled on images
-- remove all comments from code
-- expand all .css

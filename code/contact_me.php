@@ -24,16 +24,11 @@ $headers .= "Reply-To: $email_address";
 // mail($to,$email_subject,$email_body,$headers);
 
 if (mail($to,$email_subject,$email_body,$headers)) {
-    header("Location: http://graph-art.matc.edu/jacksk/vicom126/final/index.php?validation=true#contact-anchor"); // from home
-	// header("Location: http://mca.matc.edu/jacksk/vicom126/final/index.php?validation=true"); // from work
+    header("Location: http://graph-art.matc.edu/jacksk/vicom126/final/index.php?validation=true#contact-anchor");
 } else {
-    header("Location: http://graph-art.matc.edu/jacksk/vicom126/final/index.php?validation=false#contact-anchor"); // from home
-	// header("Location: http://mca.matc.edu/jacksk/vicom126/final/index.php?validation=false"); // from work
+    header("Location: http://graph-art.matc.edu/jacksk/vicom126/final/index.php?validation=false#contact-anchor");
 }
-// die();
-
 
 echo "Message has been sent successfully!";
-// var_dump($_POST); // For testing
 return true;			
 ?>
