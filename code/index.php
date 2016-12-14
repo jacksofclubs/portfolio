@@ -417,7 +417,7 @@
             <div class="modal-fade-screen">
                 <div class="modal-inner">
                     <div class="modal-close" for="modal-8"></div>
-                    <h1>Email has been sent!</h1>
+                    <h1>Email has been sent! Validation = <?=$validation?></h1>
                     <!--<p class="modal-intro">Data has been processed.</p>          
                     <p class="modal-content">Data has been processed.</p>-->
                     <!--<p class="modal-footer">
@@ -458,11 +458,11 @@
         </footer>
         <!--validation confirmation-->
         <?php
-            // $validation = "";
+            $validation = "";
             if (isset($_GET['validation'])) {
                 $validation = $_GET['validation'];
-                <!--echo "<script> $("#modal-8").prop("checked",true); </script>";   -->
-                <script> $("#modal-8").prop("checked",true); </script>
+                echo "<script> $('#modal-8').prop('checked',true); </script>";
+                // <script> $("#modal-8").prop("checked",true); </script>
             }
             // echo ("Validation result is: $validation");
         ?>        
